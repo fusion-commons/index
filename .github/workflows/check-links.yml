@@ -1,0 +1,30 @@
+name: Check links
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  pull_request:
+    paths: ["README.md", "CONTRIBUTING.md"]
+  workflow_dispatch:
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 3
+            --accept 200,201,202,203,204,206,301,302,303,307,308,403,429
+            README.md CONTRIBUTING.md
+          fail: true
+      - name: Open issue on failure
+        if: failure() && github.event_name == 'schedule'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Weekly link check found broken links"
+          content-filepath: ./lychee/out.md
+          labels: broken-link
