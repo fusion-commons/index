@@ -1,4 +1,4 @@
-# Awesome Fusion Energy [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Fusion Energy
 
 > Every code, dataset, and learning resource you need to work on fusion energy — in one place.
 
