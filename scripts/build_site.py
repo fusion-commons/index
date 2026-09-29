@@ -173,6 +173,9 @@ def build() -> None:
     OUT.mkdir(exist_ok=True)
     (OUT / "index.html").write_text(out)
     (OUT / ".nojekyll").write_text("")
+    mapsvg = ROOT / "site" / "map.svg"
+    if mapsvg.exists():
+        (OUT / "map.svg").write_text(mapsvg.read_text())
     print(f"Wrote {OUT / 'index.html'} — {total} entries")
 
 
