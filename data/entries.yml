@@ -201,7 +201,10 @@ sections:
             url: https://github.com/KronosFE/kronos-toolkit
             status: open
             lang: Python
-            install: source
+            install: pip
+            mirror:
+              label: PyPI
+              url: https://pypi.org/project/kronos-toolkit/
             desc: Anchor-tested Python research engine reproducing the published Kronos Fusion Energy physics register end-to-end.
           - name: PROCESS
             url: https://github.com/ukaea/PROCESS
@@ -617,14 +620,17 @@ sections:
             url: https://github.com/KronosFE/kronos-ml
             status: open
             lang: Python
-            install: source
-            desc: The Kronos family of codes — benchmarked AI/ML fusion surrogates and physics tools, published in versioned releases.
+            install: pip
+            mirror:
+              label: PyPI
+              url: https://pypi.org/project/kronos-fusion-ml/
+            desc: The Kronos family of codes — a fleet of benchmarked AI/ML fusion surrogates and quantum tools spanning transport, magnet quench warning, disruption prediction, breeding, and control, each release archived with citable DOIs.
           - name: kronos-quantum
             url: https://github.com/KronosFE/kronos-quantum
             status: open
             lang: Python
             install: source
-            desc: Runnable quantum-computing-for-fusion codes — honest simulators today, designed to be hardware-ready as the field matures.
+            desc: Runnable quantum-computing-for-fusion codes with a white paper — honest simulators today, pluggable into real quantum hardware as the field matures.
           - name: TORAX
             url: https://github.com/google-deepmind/torax
             status: open
@@ -814,6 +820,10 @@ sections:
             url: https://huggingface.co/SCS-Lab/pedestal-predictor-onnx
             status: open
             desc: DIII-D-trained ensemble predicting pedestal temperature, density, and rotation values, packaged as self-contained ONNX bundles for real-time inference.
+          - name: KBENCH
+            url: https://doi.org/10.5281/zenodo.22713389
+            status: open
+            desc: Open fusion-ML benchmark suite from the KODEX family — citable tasks on gyrokinetic turbulence, MAST disruption prediction, and flux reduced-order modeling, with fixed splits, metrics, and baselines to beat.
 
       - id: atomic-nuclear
         title: Atomic, molecular & nuclear data
