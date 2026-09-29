@@ -957,6 +957,19 @@ sections:
   - title: Community
     categories:
 
+      - id: regulation
+        title: Regulation & policy
+        entries:
+          - name: NRC Regulatory Framework for Fusion Machines
+            url: https://www.federalregister.gov/documents/2026/02/26/2026-03865/regulatory-framework-for-fusion-machines
+            desc: The official US proposed rule regulating commercial fusion under the byproduct-material framework (10 CFR Part 30) rather than as fission reactors.
+          - name: Towards Fusion Energy (UK government response)
+            url: https://assets.publishing.service.gov.uk/media/62b1f78a8fa8f53571e130c7/towards-fusion-energy-uk-government-response.pdf
+            desc: The UK's regulatory decision — the first country to legislate fusion-specific regulation, under the Environment Agency and HSE rather than nuclear site licensing.
+          - name: CATF — Fusion Energy Regulation in the United States
+            url: https://www.catf.us/resource/fusion-energy-regulation-united-states-frameworks-licensing-deployment/
+            desc: Plain-language overview of US fusion licensing frameworks and deployment pathways from Clean Air Task Force.
+
       - id: community
         title: Organizations, news & sibling lists
         notes:

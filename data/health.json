@@ -1,0 +1,194 @@
+{
+ "bitbucket.org/gkw/gkw": {
+  "stars": null,
+  "updated": "2026-09-24"
+ },
+ "bitbucket.org/gyrokinetics/gs2": {
+  "stars": null,
+  "updated": "2026-09-29"
+ },
+ "github.com/BLAST-WarpX/warpx": {
+  "stars": 489,
+  "updated": "2026-09-28"
+ },
+ "github.com/ComputationalRadiationPhysics/picongpu": {
+  "stars": 796,
+  "updated": "2026-09-28"
+ },
+ "github.com/Fusion-Power-Plant-Framework/bluemira": {
+  "stars": 111,
+  "updated": "2026-09-28"
+ },
+ "github.com/FusionComputingLab/freegsnke": {
+  "stars": 94,
+  "updated": "2026-09-24"
+ },
+ "github.com/IRFM/METIS": {
+  "stars": 25,
+  "updated": "2026-03-05"
+ },
+ "github.com/KronosFE/kronos-toolkit": {
+  "stars": 0,
+  "updated": "2026-09-15"
+ },
+ "github.com/LLNL/UEDGE": {
+  "stars": 56,
+  "updated": "2026-08-19"
+ },
+ "github.com/ORNL-Fusion/PARVMEC": {
+  "stars": 23,
+  "updated": "2026-09-25"
+ },
+ "github.com/PlasmaControl/DESC": {
+  "stars": 168,
+  "updated": "2026-09-29"
+ },
+ "github.com/PrincetonUniversity/FOCUS": {
+  "stars": 25,
+  "updated": "2025-04-25"
+ },
+ "github.com/PrincetonUniversity/SPEC": {
+  "stars": 34,
+  "updated": "2026-06-23"
+ },
+ "github.com/PrincetonUniversity/STELLOPT": {
+  "stars": 123,
+  "updated": "2026-09-28"
+ },
+ "github.com/ProjectTorreyPines/FUSE.jl": {
+  "stars": 91,
+  "updated": "2026-09-29"
+ },
+ "github.com/SmileiPIC/Smilei": {
+  "stars": 449,
+  "updated": "2026-09-21"
+ },
+ "github.com/Warwick-Plasma/epoch": {
+  "stars": 256,
+  "updated": "2026-09-02"
+ },
+ "github.com/ammarhakim/gkylzero": {
+  "stars": 108,
+  "updated": "2026-09-28"
+ },
+ "github.com/boutproject/BOUT-dev": {
+  "stars": 244,
+  "updated": "2026-09-29"
+ },
+ "github.com/boutproject/SD1D": {
+  "stars": 22,
+  "updated": "2023-11-15"
+ },
+ "github.com/boutproject/hermes-3": {
+  "stars": 67,
+  "updated": "2026-09-28"
+ },
+ "github.com/cfs-energy/cfspopcon": {
+  "stars": 43,
+  "updated": "2026-09-10"
+ },
+ "github.com/chalmersplasmatheory/DREAM": {
+  "stars": 48,
+  "updated": "2026-09-25"
+ },
+ "github.com/eepeterson/pleiades": {
+  "stars": 9,
+  "updated": "2021-08-18"
+ },
+ "github.com/freegs-plasma/FreeQDSK": {
+  "stars": 19,
+  "updated": "2025-02-20"
+ },
+ "github.com/freegs-plasma/freegs": {
+  "stars": 144,
+  "updated": "2026-09-23"
+ },
+ "github.com/gafusion/gacode": {
+  "stars": 42,
+  "updated": "2026-09-09"
+ },
+ "github.com/google-deepmind/torax": {
+  "stars": 725,
+  "updated": "2026-09-29"
+ },
+ "github.com/gyselax/gyselalibxx": {
+  "stars": 55,
+  "updated": "2026-09-29"
+ },
+ "github.com/hiddenSymmetries/VMEC2000": {
+  "stars": 18,
+  "updated": "2026-09-24"
+ },
+ "github.com/hiddenSymmetries/booz_xform": {
+  "stars": 20,
+  "updated": "2026-08-07"
+ },
+ "github.com/hiddenSymmetries/simsopt": {
+  "stars": 166,
+  "updated": "2026-09-29"
+ },
+ "github.com/hoppe93/SOFT2": {
+  "stars": 11,
+  "updated": "2026-04-21"
+ },
+ "github.com/ianabel/MCTrans": {
+  "stars": 7,
+  "updated": "2025-07-25"
+ },
+ "github.com/landreman/pyQSC": {
+  "stars": 17,
+  "updated": "2025-01-25"
+ },
+ "github.com/landreman/regcoil": {
+  "stars": 24,
+  "updated": "2026-08-20"
+ },
+ "github.com/lanl/vpic": {
+  "stars": 190,
+  "updated": "2025-06-19"
+ },
+ "github.com/openfusiontoolkit/OpenFUSIONToolkit": {
+  "stars": 87,
+  "updated": "2026-09-29"
+ },
+ "github.com/osiris-code/osiris": {
+  "stars": 82,
+  "updated": "2024-08-12"
+ },
+ "github.com/pabloprf/MITIM-fusion": {
+  "stars": 24,
+  "updated": "2026-09-28"
+ },
+ "github.com/piScope/PetraM_Base": {
+  "stars": 0,
+  "updated": "2025-11-05"
+ },
+ "github.com/proximafusion/open_stellarator_models": {
+  "stars": 33,
+  "updated": "2026-02-20"
+ },
+ "github.com/proximafusion/vmecpp": {
+  "stars": 252,
+  "updated": "2026-09-29"
+ },
+ "github.com/stellaGK/stella": {
+  "stars": 31,
+  "updated": "2026-09-26"
+ },
+ "github.com/tokamak-energy/gsfit": {
+  "stars": 38,
+  "updated": "2026-09-28"
+ },
+ "github.com/ukaea/PROCESS": {
+  "stars": 71,
+  "updated": "2026-09-29"
+ },
+ "gitlab.com/qualikiz-group/QuaLiKiz": {
+  "stars": 6,
+  "updated": "2026-09-02"
+ },
+ "gitlab.mpcdf.mpg.de/gvec-group/gvec": {
+  "stars": 27,
+  "updated": "2026-09-29"
+ }
+}

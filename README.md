@@ -49,6 +49,7 @@ Entries carry a short metadata tag — language, easiest install path (`pip`, `c
   - [Courses, schools & lectures](#courses-schools--lectures)
   - [Hands-on workshops](#hands-on-workshops)
 - [Community](#community)
+  - [Regulation & policy](#regulation--policy)
   - [Organizations, news & sibling lists](#organizations-news--sibling-lists)
 - [Getting access to licensed codes](#getting-access-to-licensed-codes)
 - [Roadmap](#roadmap)
@@ -333,6 +334,12 @@ Entries carry a short metadata tag — language, easiest install path (`pip`, `c
 - 🟢 [PlasmaPy example gallery](https://docs.plasmapy.org/en/stable/examples.html) — Notebook examples for computational plasma physics in Python.
 
 ## Community
+
+### Regulation & policy
+
+- [CATF — Fusion Energy Regulation in the United States](https://www.catf.us/resource/fusion-energy-regulation-united-states-frameworks-licensing-deployment/) — Plain-language overview of US fusion licensing frameworks and deployment pathways from Clean Air Task Force.
+- [NRC Regulatory Framework for Fusion Machines](https://www.federalregister.gov/documents/2026/02/26/2026-03865/regulatory-framework-for-fusion-machines) — The official US proposed rule regulating commercial fusion under the byproduct-material framework (10 CFR Part 30) rather than as fission reactors.
+- [Towards Fusion Energy (UK government response)](https://assets.publishing.service.gov.uk/media/62b1f78a8fa8f53571e130c7/towards-fusion-energy-uk-government-response.pdf) — The UK's regulatory decision — the first country to legislate fusion-specific regulation, under the Environment Agency and HSE rather than nuclear site licensing.
 
 ### Organizations, news & sibling lists
 

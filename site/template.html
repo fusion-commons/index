@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fusion Commons</title>
+<meta name="description" content="Every code, dataset, and learning resource you need to work on fusion energy — in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f6f3; --panel:#ffffff; --ink:#20242c; --muted:#5c6470; --line:#e3e0d8;
+  --accent:#2456a6; --band:#f1efe9;
+  --ok-bg:#e2f2e8; --ok-ink:#1e6f42; --mid-bg:#faeed3; --mid-ink:#8a6414; --bad-bg:#f9e3e1; --bad-ink:#a03730;
+  --none-bg:#e9e7e1; --none-ink:#5c6470; --pill-bg:#eef1f6; --pill-ink:#44506a;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14171d; --panel:#1b1f27; --ink:#e8e6e1; --muted:#9aa1ac; --line:#2a2f3a;
+    --accent:#8fb3e8; --band:#20242d;
+    --ok-bg:#1c3527; --ok-ink:#7fd3a1; --mid-bg:#3a311c; --mid-ink:#e3bd6a; --bad-bg:#402022; --bad-ink:#e89b93;
+    --none-bg:#262a33; --none-ink:#9aa1ac; --pill-bg:#242a36; --pill-ink:#aeb9cf;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header.hero{padding:44px 0 10px}
+.hero h1{font-size:clamp(30px,5.5vw,44px);font-weight:800;letter-spacing:-.02em;margin:0}
+.hero .tag{font-size:clamp(16px,2.6vw,19px);color:var(--muted);margin:10px 0 0;max-width:44em}
+.hero .credit{font-size:13.5px;color:var(--muted);margin-top:14px}
+.hero .credit a{color:inherit;text-decoration:underline;text-decoration-color:var(--line)}
+.linksrow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.btn{display:inline-block;border:1px solid var(--line);background:var(--panel);color:var(--ink);
+  padding:7px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+.btn.heart{color:var(--bad-ink)}
+.controls{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 0 10px;border-bottom:1px solid var(--line)}
+.searchrow{display:flex;gap:10px;align-items:center}
+#q{flex:1;font:inherit;font-size:16px;color:var(--ink);background:var(--panel);
+  border:1.5px solid var(--line);border-radius:12px;padding:11px 15px;outline:none}
+#q:focus{border-color:var(--accent)}
+#catjump{font:inherit;font-size:14px;color:var(--ink);background:var(--panel);border:1.5px solid var(--line);
+  border-radius:12px;padding:11px 10px;max-width:38vw}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;align-items:center}
+.chips .lbl{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-right:2px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;
+  padding:4px 12px;font-size:13.5px;cursor:pointer;user-select:none}
+.chip.on{border-color:var(--accent);color:var(--accent);font-weight:600}
+.count{font-size:13px;color:var(--muted);margin-top:9px}
+main{padding:8px 0 30px}
+.topsection h2{font-size:26px;font-weight:800;letter-spacing:-.01em;margin:38px 0 6px}
+.category h3{font-size:18.5px;font-weight:600;margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.entry{display:flex;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:13px 15px;margin:8px 0}
+.dot{flex:none;width:10px;height:10px;border-radius:50%;margin-top:7px}
+.dot.open{background:#3ba55d}.dot.registration{background:#d9a62b}.dot.restricted{background:#c4453c}
+.dot.none{background:var(--none-ink);opacity:.45}
+.entry-main{min-width:0}
+.entry-head{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.name{font-weight:600;font-size:16.5px}
+.desc{margin:3px 0 0;color:var(--muted);font-size:14.5px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+.pill{background:var(--pill-bg);color:var(--pill-ink);border-radius:999px;padding:2px 10px;font-size:12.5px;font-weight:500}
+.pill.host{background:var(--mid-bg);color:var(--mid-ink)}
+.mirror{font-size:12.5px;font-weight:500}
+.health{font-size:12.5px;color:var(--muted)}
+.note{color:var(--muted);font-size:14px;font-style:italic;margin:10px 2px}
+.scorecard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0}
+.scorecard h4{margin:0 0 4px;font-size:16px;font-weight:600}
+.cardnote{margin:0 0 10px;font-size:13px;color:var(--muted);font-style:italic}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+  padding:8px 10px;border-bottom:1px solid var(--line)}
+td{padding:9px 10px;vertical-align:top}
+tbody tr:nth-child(odd){background:var(--band)}
+td.rowname{font-weight:600;white-space:nowrap}
+.cellpill{display:inline-block;border-radius:999px;padding:2px 11px;font-size:13px;font-weight:500}
+.cellpill.ok{background:var(--ok-bg);color:var(--ok-ink)}
+.cellpill.mid{background:var(--mid-bg);color:var(--mid-ink)}
+.cellpill.bad{background:var(--bad-bg);color:var(--bad-ink)}
+.cellmuted{color:var(--muted);opacity:.6}
+.guides{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin:20px 0 4px;font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer p{margin:8px 0}
+.hidden{display:none !important}
+@media (max-width:640px){ #catjump{display:none} table{min-width:480px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>The Fusion Commons</h1>
+  <p class="tag">Every code, dataset, and learning resource you need to work on fusion energy — in one place. Access status marked on every entry, across GitHub, GitLab, Bitbucket, and Hugging Face.</p>
+  <div class="linksrow">
+    <a class="btn" href="https://github.com/fusion-commons/index">GitHub ↗</a>
+    <a class="btn" href="https://github.com/fusion-commons/index/blob/main/CONTRIBUTING.md">Contribute</a>
+    <a class="btn heart" href="https://www.elephants.com/donate">♥ The elephants</a>
+  </div>
+  <p class="credit">A community resource, founded and maintained by <a href="https://www.kronosfusionenergy.com">Kronos Fusion Energy</a>. Content CC BY 4.0.</p>
+</header>
+
+<div class="controls">
+  <div class="searchrow">
+    <input id="q" type="search" placeholder="Search codes, datasets, topics… (try: gyrokinetic, tritium, stellarator)" autocomplete="off">
+    <select id="catjump"><option value="">Jump to category…</option>__CATOPTIONS__</select>
+  </div>
+  <div class="chips">
+    <span class="lbl">Access</span>
+    <span class="chip" data-facet="status" data-val="open">🟢 Open</span>
+    <span class="chip" data-facet="status" data-val="registration">🟡 Registration</span>
+    <span class="chip" data-facet="status" data-val="restricted">🔴 Restricted</span>
+    <span class="lbl">Platform</span>
+    <span class="chip" data-facet="host" data-val="github">GitHub</span>
+    <span class="chip" data-facet="host" data-val="gitlab">GitLab</span>
+    <span class="chip" data-facet="host" data-val="bitbucket">Bitbucket</span>
+    <span class="chip" data-facet="host" data-val="huggingface">Hugging Face</span>
+    <span class="lbl">Install</span>
+    <span class="chip" data-facet="install" data-val="pip">pip</span>
+    <span class="chip" data-facet="install" data-val="conda">conda</span>
+    <span class="chip" data-facet="install" data-val="source">source</span>
+  </div>
+  <div class="count" id="count"></div>
+</div>
+
+<main>
+<div class="guides">🧭 <strong>New to fusion computing?</strong> The <a href="https://github.com/fusion-commons/index/tree/main/guides">hands-on guides</a> take you from zero to a first equilibrium, a first transport run, and a first neutronics model — each in under an hour.</div>
+__BODY__
+</main>
+
+<footer>
+  <p><strong>The Fusion Commons</strong> is built in phases: the index (here) → this website with live project health → a DOI-indexed data registry → a one-command fusion software stack → a unified runner for chaining codes into pipelines.</p>
+  <p>Additions welcome: <a href="https://github.com/fusion-commons/index/issues/new/choose">open an issue</a> or edit <a href="https://github.com/fusion-commons/index/blob/main/data/entries.yml">data/entries.yml</a> — this page is generated from it. Updated __DATE__.</p>
+  <p>Free, forever. If the Commons saves you time, consider a gift to <a href="https://www.elephants.com/donate">The Elephant Sanctuary in Tennessee</a>, this project's chosen cause.</p>
+  <p>Content <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · scripts Apache-2.0 · every linked project keeps its own license. Founded and maintained by <a href="https://www.kronosfusionenergy.com">Kronos Fusion Energy</a> · <a href="https://www.kronosfusionenergy.com/contact">contact</a>.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var q=document.getElementById('q'), count=document.getElementById('count');
+  var entries=[].slice.call(document.querySelectorAll('.entry'));
+  var cats=[].slice.call(document.querySelectorAll('.category'));
+  var secs=[].slice.call(document.querySelectorAll('.topsection'));
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  var active={status:[],host:[],install:[]};
+  var TOTAL=__TOTAL__;
+
+  function apply(){
+    var term=q.value.trim().toLowerCase(), shown=0;
+    entries.forEach(function(e){
+      var ok=true;
+      if(term && e.getAttribute('data-s').indexOf(term)<0) ok=false;
+      ['status','host','install'].forEach(function(f){
+        if(ok && active[f].length && active[f].indexOf(e.getAttribute('data-'+f))<0) ok=false;
+      });
+      e.classList.toggle('hidden',!ok); if(ok) shown++;
+    });
+    var filtering = term || active.status.length || active.host.length || active.install.length;
+    cats.forEach(function(c){
+      var any=c.querySelector('.entry:not(.hidden)');
+      c.classList.toggle('hidden',!any);
+      [].slice.call(c.querySelectorAll('.note,.scorecard')).forEach(function(x){
+        x.classList.toggle('hidden',!!filtering);
+      });
+    });
+    secs.forEach(function(s){
+      if(s.id==='access'){ s.classList.toggle('hidden',!!filtering); return; }
+      s.classList.toggle('hidden',!s.querySelector('.category:not(.hidden)'));
+    });
+    count.textContent = filtering ? ('Showing '+shown+' of '+TOTAL+' resources') : (TOTAL+' resources · updated __DATE__');
+  }
+  q.addEventListener('input',apply);
+  chips.forEach(function(ch){
+    ch.addEventListener('click',function(){
+      var f=ch.getAttribute('data-facet'), v=ch.getAttribute('data-val');
+      var i=active[f].indexOf(v);
+      if(i<0) active[f].push(v); else active[f].splice(i,1);
+      ch.classList.toggle('on',i<0); apply();
+    });
+  });
+  document.getElementById('catjump').addEventListener('change',function(){
+    var el=this.value&&document.getElementById(this.value);
+    if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+    this.value='';
+  });
+  apply();
+})();
+</script>
+</body>
+</html>
