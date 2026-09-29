@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use The Fusion Commons in your work, please cite it.
+title: "The Fusion Commons: a curated index of fusion energy codes, data, and learning resources"
+type: dataset
+authors:
+  - family-names: Ford
+    given-names: P. I.
+  - name: Kronos Fusion Energy
+repository-code: https://github.com/fusion-commons/index
+license: CC-BY-4.0
+keywords:
+  - fusion energy
+  - plasma physics
+  - scientific software
+  - open data

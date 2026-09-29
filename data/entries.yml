@@ -1,0 +1,982 @@
+# The Fusion Commons — index data
+# This file is the single source of truth. README.md is generated from it:
+#   python scripts/build_readme.py
+#
+# Entry fields:
+#   name     (required) display name
+#   url      (required) official home — repo or project's own site
+#   status   (required) open | registration | restricted
+#   desc     (required) one factual sentence
+#   lang     main language(s) — omit for data/learning/community entries
+#   install  easiest install path: pip | conda | julia | container | binary | source | service
+#   access   where/how to request access (registration/restricted entries; feeds the access table)
+#   mirror   optional secondary link {label, url}
+#
+# Host tags (GitLab, Bitbucket, Hugging Face) are derived from the URL automatically.
+
+sections:
+  - title: Simulation codes
+    categories:
+
+      - id: equilibrium
+        title: Plasma equilibrium & MHD
+        entries:
+          - name: DESC
+            url: https://github.com/PlasmaControl/DESC
+            status: open
+            lang: Python
+            install: pip
+            desc: Stellarator and tokamak equilibrium, stability, and optimization suite built on pseudo-spectral methods and automatic differentiation.
+          - name: FreeGS
+            url: https://github.com/freegs-plasma/freegs
+            status: open
+            lang: Python
+            install: pip
+            desc: Free-boundary Grad–Shafranov equilibrium solver for tokamaks, well suited to scenario design and control studies.
+          - name: FreeQDSK
+            url: https://github.com/freegs-plasma/FreeQDSK
+            status: open
+            lang: Python
+            install: pip
+            desc: Reader/writer for the G-EQDSK, A-EQDSK, and P-EQDSK equilibrium file formats.
+          - name: Open FUSION Toolkit
+            url: https://github.com/openfusiontoolkit/OpenFUSIONToolkit
+            status: open
+            lang: Fortran/Python
+            install: source
+            desc: Suite of tools for fusion simulation, including the TokaMaker Grad–Shafranov solver and 3D MHD capabilities.
+          - name: PARVMEC
+            url: https://github.com/ORNL-Fusion/PARVMEC
+            status: open
+            lang: Fortran
+            install: source
+            desc: Parallel version of the VMEC 3D ideal-MHD equilibrium code, the workhorse of stellarator equilibrium.
+          - name: SPEC
+            url: https://github.com/PrincetonUniversity/SPEC
+            status: open
+            lang: Fortran
+            install: source
+            desc: Stepped-Pressure Equilibrium Code — 3D MHD equilibria with islands and chaotic fields via multi-region relaxed MHD.
+          - name: VMEC2000
+            url: https://github.com/hiddenSymmetries/VMEC2000
+            status: open
+            lang: Fortran/Python
+            install: source
+            desc: VMEC build with a Python wrapper and CMake tooling, maintained for the SIMSOPT optimization ecosystem.
+          - name: EFIT
+            url: https://omfit.io/modules/mod_EFIT.html
+            status: registration
+            lang: Fortran
+            access: Via General Atomics; commonly run through OMFIT
+            desc: The standard tokamak equilibrium reconstruction code from General Atomics; commonly run through OMFIT.
+          - name: JOREK
+            url: https://www.jorek.eu
+            status: registration
+            lang: Fortran
+            access: Via consortium membership at jorek.eu
+            desc: Nonlinear extended-MHD code for disruptions, ELMs, and 3D instabilities in divertor tokamaks.
+          - name: M3D-C1
+            url: https://m3dc1.pppl.gov
+            status: registration
+            lang: Fortran
+            access: Request access from PPPL
+            desc: High-order 3D extended-MHD code from PPPL for tokamak stability and disruption modeling.
+          - name: NIMROD
+            url: https://nimrodteam.org
+            status: registration
+            lang: Fortran
+            access: Contact the NIMROD team
+            desc: Nonlinear 3D extended-MHD code used widely for macroscopic stability studies.
+          - name: GVEC
+            url: https://gitlab.mpcdf.mpg.de/gvec-group/gvec
+            status: open
+            lang: Fortran
+            install: source
+            desc: Galerkin Variational Equilibrium Code from Max Planck IPP — flexible open 3D ideal-MHD equilibrium solver in the VMEC lineage.
+          - name: VMEC++
+            url: https://github.com/proximafusion/vmecpp
+            status: open
+            lang: C++/Python
+            install: pip
+            desc: Proxima Fusion's from-scratch open reimplementation of the VMEC 3D MHD equilibrium code, built for modern stellarator optimization.
+          - name: GSFit
+            url: https://github.com/tokamak-energy/gsfit
+            status: open
+            lang: Rust/Python
+            install: source
+            desc: Grad–Shafranov equilibrium reconstruction open-sourced by Tokamak Energy, with a real-time sibling (RT-GSFit) running in the ST40 control system.
+          - name: FreeGSNKE
+            url: https://github.com/FusionComputingLab/freegsnke
+            status: open
+            lang: Python
+            install: pip
+            desc: Evolutive free-boundary Grad–Shafranov simulator from UKAEA, validated on MAST-U and a standard backend for control and surrogate training pipelines.
+
+      - id: gyrokinetics
+        title: Gyrokinetics, turbulence & transport
+        entries:
+          - name: GACODE
+            url: https://github.com/gafusion/gacode
+            status: open
+            lang: Fortran
+            install: source
+            desc: General Atomics suite — CGYRO (gyrokinetic turbulence), TGLF (quasilinear transport), NEO (neoclassical), and TGYRO (transport solver).
+          - name: Gkeyll
+            url: https://github.com/ammarhakim/gkylzero
+            status: open
+            lang: C
+            install: source
+            desc: Modern C/CUDA framework for gyrokinetic, Vlasov–Maxwell, and multi-moment fluid simulation on GPUs.
+          - name: GKW
+            url: https://bitbucket.org/gkw/gkw/src
+            status: open
+            lang: Fortran
+            install: source
+            desc: Global and flux-tube nonlinear gyrokinetic code for turbulence in rotating plasmas.
+          - name: QuaLiKiz
+            url: https://gitlab.com/qualikiz-group/QuaLiKiz
+            status: open
+            lang: Fortran
+            install: source
+            desc: Fast quasilinear gyrokinetic transport model, widely used inside integrated modeling loops and as a neural-network surrogate.
+          - name: stella
+            url: https://github.com/stellaGK/stella
+            status: open
+            lang: Fortran
+            install: source
+            desc: Operator-split gyrokinetic code built for stellarator turbulence and mixed implicit/explicit timestepping.
+          - name: GENE
+            url: https://genecode.org
+            status: registration
+            lang: Fortran
+            access: Sign the user agreement at genecode.org
+            desc: Flagship Eulerian gyrokinetic turbulence code (flux-tube to global, tokamaks and stellarators); free after signing a user agreement.
+          - name: GS2
+            url: https://bitbucket.org/gyrokinetics/gs2
+            status: registration
+            lang: Fortran
+            access: Request access at bitbucket.org/gyrokinetics (also hosts GX)
+            desc: Pioneering flux-tube gyrokinetic code for tokamak and stellarator microinstability and turbulence studies.
+          - name: XGC
+            url: https://xgc.pppl.gov
+            status: registration
+            lang: Fortran/C++
+            access: Request access from PPPL
+            desc: Whole-volume gyrokinetic particle-in-cell code for edge and core, scaling to exascale machines.
+          - name: Gyselalib++
+            url: https://github.com/gyselax/gyselalibxx
+            status: open
+            lang: C++
+            install: source
+            desc: Open GPU-ready semi-Lagrangian gyrokinetic library from CEA's GYSELA-X project.
+          - name: ORB5
+            url: https://orb5.epfl.ch
+            status: restricted
+            lang: Fortran
+            access: Via collaboration agreement with EPFL's Swiss Plasma Center
+            desc: Global electromagnetic gyrokinetic particle-in-cell code from EPFL's Swiss Plasma Center; source via collaboration agreement.
+
+      - id: integrated
+        title: Integrated modeling & systems codes
+        entries:
+          - name: Bluemira
+            url: https://github.com/Fusion-Power-Plant-Framework/bluemira
+            status: open
+            lang: Python
+            install: conda
+            desc: Integrated design framework for fusion power plants — reactor geometry, magnets, balance of plant, and optimization.
+          - name: cfspopcon
+            url: https://github.com/cfs-energy/cfspopcon
+            status: open
+            lang: Python
+            install: pip
+            desc: Fast 0-D plasma operating-contour (POPCON) analysis from Commonwealth Fusion Systems.
+          - name: FUSE
+            url: https://github.com/ProjectTorreyPines/FUSE.jl
+            status: open
+            lang: Julia
+            install: julia
+            desc: Whole-facility fusion simulator from General Atomics — plasma, engineering, and costing in one differentiable Julia stack.
+          - name: Kronos Toolkit
+            url: https://github.com/KronosFE/kronos-toolkit
+            status: open
+            lang: Python
+            install: source
+            desc: Anchor-tested Python research engine reproducing the published Kronos Fusion Energy physics register end-to-end.
+          - name: PROCESS
+            url: https://github.com/ukaea/PROCESS
+            status: open
+            lang: Python/Fortran
+            install: source
+            desc: UKAEA systems code for self-consistent fusion power plant design points and trade studies.
+          - name: TORAX
+            url: https://github.com/google-deepmind/torax
+            status: open
+            lang: Python
+            install: pip
+            desc: Differentiable tokamak core transport simulator in JAX from Google DeepMind, built for fast scenario optimization and ML coupling.
+          - name: OMFIT
+            url: https://omfit.io
+            status: registration
+            lang: Python
+            access: Free registration form at omfit.io
+            desc: One Modeling Framework for Integrated Tasks — the glue framework connecting dozens of fusion codes and experimental databases.
+          - name: TRANSP
+            url: https://transp.pppl.gov
+            status: registration
+            lang: Fortran
+            install: service
+            access: Run as a service; request a PPPL account
+            desc: The reference tokamak time-dependent transport analysis and prediction code, run as a service by PPPL.
+          - name: METIS
+            url: https://github.com/IRFM/METIS
+            status: open
+            lang: MATLAB
+            install: source
+            desc: CEA-IRFM's fast integrated tokamak scenario and transport simulator, released under the CeCILL-C license.
+          - name: MITIM
+            url: https://github.com/pabloprf/MITIM-fusion
+            status: open
+            lang: Python
+            install: pip
+            desc: MIT integrated-modeling toolbox including PORTALS — surrogate-based optimization that accelerates high-fidelity core transport predictions.
+
+      - id: edge
+        title: Edge, scrape-off layer & divertor
+        entries:
+          - name: BOUT++
+            url: https://github.com/boutproject/BOUT-dev
+            status: open
+            lang: C++
+            install: source
+            desc: Framework for plasma fluid and turbulence simulation in general curvilinear geometry, the base for many edge codes.
+          - name: Hermes-3
+            url: https://github.com/boutproject/hermes-3
+            status: open
+            lang: C++
+            install: source
+            desc: Hot-ion multifluid drift-reduced model for tokamak edge and scrape-off-layer transport, built on BOUT++.
+          - name: SD1D
+            url: https://github.com/boutproject/SD1D
+            status: open
+            lang: C++
+            install: source
+            desc: 1D divertor leg model of plasma–neutral interaction and detachment, built on BOUT++.
+          - name: UEDGE
+            url: https://github.com/LLNL/UEDGE
+            status: open
+            lang: Fortran/Python
+            install: pip
+            desc: 2D fluid code for plasma and neutrals in the tokamak edge, from LLNL, with a Python interface.
+          - name: EIRENE
+            url: https://www.eirene.de
+            status: registration
+            lang: Fortran
+            access: Request from the EIRENE team at eirene.de
+            desc: Kinetic Monte Carlo neutral particle and radiation transport code, the neutrals engine inside SOLPS-ITER.
+          - name: SOLPS-ITER
+            url: https://www.iter.org/
+            status: registration
+            access: Distributed under ITER Organization user agreement
+            desc: The standard coupled plasma/neutrals code package for divertor and scrape-off-layer design, maintained by the ITER Organization.
+          - name: DEGAS 2
+            url: https://w3.pppl.gov/degas2/
+            status: registration
+            lang: C
+            access: Complete the licensing form at w3.pppl.gov/degas2
+            desc: PPPL Monte Carlo neutral-transport code for fusion edge plasmas.
+          - name: GBS
+            url: https://gbs.epfl.ch
+            status: registration
+            lang: Fortran
+            access: Request from EPFL's Swiss Plasma Center via gbs.epfl.ch
+            desc: EPFL's Global Braginskii Solver for edge and scrape-off-layer plasma turbulence in diverted geometries.
+          - name: SOLEDGE3X
+            url: https://soledge3x.com
+            status: registration
+            lang: Fortran
+            access: On request via the contact address at soledge3x.com
+            desc: CEA-IRFM and Aix-Marseille edge-plasma transport and turbulence code including wall geometry, recycling, and impurity physics.
+
+      - id: disruptions
+        title: Disruptions & runaway electrons
+        entries:
+          - name: DREAM
+            url: https://github.com/chalmersplasmatheory/DREAM
+            status: open
+            lang: C++
+            install: source
+            desc: Disruption Runaway Electron Analysis Model from Chalmers — the standard open tool for simulating runaway-electron generation and mitigation.
+          - name: SOFT2
+            url: https://github.com/hoppe93/SOFT2
+            status: open
+            lang: C++
+            install: source
+            desc: Synthetic synchrotron diagnostic from Chalmers reproducing camera images and spectra of runaway-electron radiation.
+
+      - id: pic
+        title: Particle-in-cell & kinetic codes
+        entries:
+          - name: EPOCH
+            url: https://github.com/Warwick-Plasma/epoch
+            status: open
+            lang: Fortran
+            install: source
+            desc: Widely used relativistic particle-in-cell code for laser–plasma interaction and kinetic physics.
+          - name: PIConGPU
+            url: https://github.com/ComputationalRadiationPhysics/picongpu
+            status: open
+            lang: C++
+            install: source
+            desc: Fully relativistic, many-GPU particle-in-cell code with best-in-class performance.
+          - name: Smilei
+            url: https://github.com/SmileiPIC/Smilei
+            status: open
+            lang: C++/Python
+            install: source
+            desc: Collaborative open particle-in-cell code for fusion, laser–plasma, and astrophysical kinetic simulation.
+          - name: VPIC
+            url: https://github.com/lanl/vpic
+            status: open
+            lang: C++
+            install: source
+            desc: Los Alamos 3D relativistic kinetic particle-in-cell code, built for extreme scale.
+          - name: WarpX
+            url: https://github.com/BLAST-WarpX/warpx
+            status: open
+            lang: C++/Python
+            install: conda
+            desc: Exascale mesh-refined particle-in-cell code (2022 Gordon Bell Prize) for kinetic plasma and accelerator modeling.
+          - name: OSIRIS
+            url: https://github.com/osiris-code/osiris
+            status: open
+            lang: Fortran
+            install: source
+            desc: The widely used UCLA/IST relativistic particle-in-cell code, historically agreement-only and now public under AGPL-3.0.
+
+      - id: stellarator
+        title: Stellarator design & optimization
+        entries:
+          - name: booz_xform
+            url: https://github.com/hiddenSymmetries/booz_xform
+            status: open
+            lang: C++/Python
+            install: pip
+            desc: Transforms stellarator equilibria to Boozer coordinates, with Python bindings.
+          - name: FOCUS
+            url: https://github.com/PrincetonUniversity/FOCUS
+            status: open
+            lang: Fortran
+            install: source
+            desc: Flexible optimized coil design using space curves — finds buildable coils for stellarators.
+          - name: pyQSC
+            url: https://github.com/landreman/pyQSC
+            status: open
+            lang: Python
+            install: pip
+            desc: Near-axis expansion for rapid design of quasisymmetric stellarator configurations.
+          - name: REGCOIL
+            url: https://github.com/landreman/regcoil
+            status: open
+            lang: Fortran
+            install: source
+            desc: Regularized winding-surface coil optimization for stellarators.
+          - name: SIMSOPT
+            url: https://github.com/hiddenSymmetries/simsopt
+            status: open
+            lang: Python/C++
+            install: pip
+            desc: Flexible stellarator optimization framework tying together VMEC, SPEC, coil design, and gradient-based optimization.
+          - name: STELLOPT
+            url: https://github.com/PrincetonUniversity/STELLOPT
+            status: open
+            lang: Fortran
+            install: source
+            desc: The classic stellarator equilibrium optimization suite, including BEAMS3D and DIAGNO.
+          - name: Open stellarator models
+            url: https://github.com/proximafusion/open_stellarator_models
+            status: open
+            desc: Simplified stellarator CAD models published by Proxima Fusion as an open engineering and design resource.
+
+      - id: alternative
+        title: Alternative concepts
+        notes:
+          - "Kinetic FRC and Z-pinch studies in the open literature largely run on the particle-in-cell codes above (WarpX, Gkeyll), and the Open FUSION Toolkit descends from spheromak research — the entries here are concept-specific tools."
+        entries:
+          - name: MCTrans++
+            url: https://github.com/ianabel/MCTrans
+            status: open
+            lang: C++
+            install: source
+            desc: 0-D scoping model for transport in centrifugally confined magnetic mirrors, used for the CMFX experiment at the University of Maryland.
+          - name: Pleiades
+            url: https://github.com/eepeterson/pleiades
+            status: open
+            lang: Python
+            install: source
+            desc: Green's-function equilibrium and coil-design code used to generate magnetic-mirror equilibria for the WHAM experiment.
+
+      - id: rf
+        title: Heating, current drive & fast particles
+        entries:
+          - name: Petra-M
+            url: https://github.com/piScope/PetraM_Base
+            status: open
+            lang: Python
+            install: source
+            desc: Finite-element RF wave simulation framework (built on MFEM) used for ICRF antenna-to-core modeling.
+          - name: Scotty
+            url: https://github.com/beam-tracing/Scotty
+            status: open
+            lang: Python
+            install: pip
+            desc: Beam-tracing code for Doppler backscattering and microwave beam propagation in fusion plasmas.
+          - name: ASCOT5
+            url: https://github.com/ascot4fusion/ascot5
+            status: open
+            lang: C/Python
+            install: source
+            desc: High-performance Monte Carlo orbit-following code for fast ions, neutral-beam injection, and wall-load studies in tokamaks and stellarators.
+          - name: CQL3D
+            url: https://github.com/compxco/cql3d
+            status: open
+            lang: Fortran
+            install: source
+            desc: CompX's 3D Fokker–Planck collisional/quasilinear code for RF and neutral-beam heating, now openly published; the CQL3D-m variant serves mirror machines.
+          - name: GENRAY
+            url: https://github.com/compxco/genray
+            status: open
+            lang: Fortran
+            install: source
+            desc: All-frequencies ray-tracing code for RF wave propagation in plasmas, the standard companion to CQL3D.
+
+      - id: neutronics
+        title: Neutronics, activation & shielding
+        entries:
+          - name: ALARA
+            url: https://github.com/svalinn/ALARA
+            status: open
+            lang: C++
+            install: source
+            desc: Activation, decay-heat, and dose analysis code designed for fusion energy systems.
+          - name: DAGMC
+            url: https://github.com/svalinn/DAGMC
+            status: open
+            lang: C++
+            install: conda
+            desc: Direct Accelerated Geometry Monte Carlo — run neutronics directly on CAD geometry with OpenMC, MCNP, and more.
+          - name: Geant4
+            url: https://geant4.web.cern.ch
+            status: open
+            lang: C++
+            install: source
+            desc: CERN's general-purpose particle transport toolkit, used for shielding and detector studies.
+          - name: HYPERION activation study
+            url: https://github.com/KronosFE/hyperion-activation
+            status: open
+            lang: Python
+            install: source
+            desc: Worked open OpenMC R2S example — activation, waste classification, and shutdown dose for a breeder blanket.
+          - name: OpenMC
+            url: https://github.com/openmc-dev/openmc
+            status: open
+            lang: C++/Python
+            install: conda
+            desc: Community Monte Carlo neutron and photon transport code — the open standard for fusion neutronics.
+          - name: Paramak
+            url: https://github.com/fusion-energy/paramak
+            status: open
+            lang: Python
+            install: pip
+            desc: Parametric CAD models of fusion reactors, ready for neutronics workflows.
+          - name: PyNE
+            url: https://github.com/pyne/pyne
+            status: open
+            lang: Python/C++
+            install: conda
+            desc: Nuclear engineering toolkit — nuclear data, cross sections, transmutation, and mesh utilities.
+          - name: FISPACT-II
+            url: https://fispact.ukaea.uk
+            status: registration
+            lang: Fortran
+            access: UKAEA license, free for academic use
+            desc: UKAEA inventory code for activation, transmutation, and waste — the fusion-standard companion to TENDL data.
+          - name: Serpent
+            url: https://serpent.vtt.fi
+            status: registration
+            lang: C
+            access: VTT license via national distribution centers
+            desc: Continuous-energy Monte Carlo transport and burnup code from VTT with strong fusion adoption.
+          - name: MCNP
+            url: https://rsicc.ornl.gov
+            status: restricted
+            lang: Fortran
+            access: Export-controlled; RSICC handles eligibility
+            desc: The reference general Monte Carlo N-Particle transport code; export-controlled, distributed through RSICC.
+
+      - id: materials
+        title: Materials & fuel cycle
+        entries:
+          - name: FESTIM
+            url: https://github.com/festim-dev/FESTIM
+            status: open
+            lang: Python
+            install: pip
+            desc: Finite-element hydrogen/tritium transport in materials — trapping, permeation, and thermal fields.
+          - name: LAMMPS
+            url: https://github.com/lammps/lammps
+            status: open
+            lang: C++
+            install: conda
+            desc: Molecular dynamics workhorse for radiation damage and plasma-facing materials studies.
+          - name: MOOSE
+            url: https://github.com/idaholab/moose
+            status: open
+            lang: C++
+            install: conda
+            desc: Idaho National Laboratory's multiphysics finite-element framework underlying many fusion materials and blanket tools.
+          - name: TMAP8
+            url: https://github.com/idaholab/TMAP8
+            status: open
+            lang: C++
+            install: source
+            desc: Tritium Migration Analysis Program, rebuilt on MOOSE — the standard for fuel-cycle tritium safety analysis.
+          - name: SRIM
+            url: http://www.srim.org
+            status: registration
+            install: binary
+            access: Free binaries from srim.org (closed source)
+            desc: Stopping and Range of Ions in Matter — the classic ion-implantation and sputtering tables; free binaries, closed source.
+
+      - id: engineering
+        title: Plant engineering & plasma-facing components
+        entries:
+          - name: cfsem
+            url: https://github.com/cfs-energy/cfsem-py
+            status: open
+            lang: Rust/Python
+            install: pip
+            desc: Commonwealth Fusion Systems' quasi-steady electromagnetics library — Biot–Savart, filamentized coils, and Grad–Shafranov utilities for tokamak design.
+          - name: CoolProp
+            url: https://www.coolprop.org
+            status: open
+            lang: C++
+            install: pip
+            desc: Open thermophysical property library covering cryogenic fluids such as helium and hydrogen; used in Bluemira's cryogenics and coolant calculations.
+          - name: GeN-Foam
+            url: https://gitlab.com/foam-for-nuclear/GeN-Foam
+            status: open
+            lang: C++
+            install: source
+            desc: OpenFOAM-based multiphysics solver for thermal-hydraulics, thermal-mechanics, and neutronics, relevant to balance-of-plant and liquid-metal blanket analysis.
+          - name: HEAT
+            url: https://github.com/plasmapotential/HEAT
+            status: open
+            lang: Python
+            install: source
+            desc: Heat flux Engineering Analysis Toolkit mapping 3D plasma heat and particle loads onto real CAD of plasma-facing components.
+          - name: Robinson HTS Wire Database
+            url: https://htsdb.wimbush.eu
+            status: open
+            desc: Open database of measured critical-current characteristics of commercial REBCO/HTS wires — a standard data source for fusion magnet conductor design.
+          - name: SMARDDA (smalib)
+            url: https://github.com/smardda/smalib
+            status: open
+            lang: Fortran
+            install: source
+            desc: UKAEA library for magnetic field-line following and power-deposition mapping onto CAD plasma-facing surfaces, the approach underlying ITER's SMITER framework.
+          - name: Stellarmesh
+            url: https://github.com/stellarmesh/stellarmesh
+            status: open
+            lang: Python
+            install: pip
+            desc: CAD-to-DAGMC meshing library for neutronics workflows, originally from Thea Energy and now community-maintained.
+          - name: Stellarvista
+            url: https://github.com/Thea-Energy/stellarvista
+            status: open
+            lang: Python
+            install: pip
+            desc: Thea Energy's tool for in-notebook 3D visualization of DAGMC geometry and OpenMC tallies in stellarator neutronics workflows.
+
+      - id: control-ml
+        title: Plasma control, machine learning & quantum
+        entries:
+          - name: disruption-py
+            url: https://github.com/MIT-PSFC/disruption-py
+            status: open
+            lang: Python
+            install: pip
+            desc: Open workflow from MIT PSFC for building disruption-prediction databases from tokamak shots.
+          - name: FRNN
+            url: https://github.com/PPPLDeepLearning/plasma-python
+            status: open
+            lang: Python
+            install: source
+            desc: Fusion Recurrent Neural Network — deep learning for disruption prediction from PPPL.
+          - name: KODEX
+            url: https://github.com/KronosFE/kronos-ml
+            status: open
+            lang: Python
+            install: source
+            desc: The Kronos family of codes — benchmarked AI/ML fusion surrogates and physics tools, published in versioned releases.
+          - name: kronos-quantum
+            url: https://github.com/KronosFE/kronos-quantum
+            status: open
+            lang: Python
+            install: source
+            desc: Runnable quantum-computing-for-fusion codes — honest simulators today, designed to be hardware-ready as the field matures.
+          - name: TORAX
+            url: https://github.com/google-deepmind/torax
+            status: open
+            lang: Python
+            install: pip
+            desc: Also listed under integrated modeling — its differentiability makes it a natural base for control and ML research.
+          - name: DisruptionBench
+            url: https://github.com/MIT-PSFC/DisruptionBench
+            status: open
+            lang: Python
+            install: source
+            desc: Machine-agnostic benchmarking framework for ML disruption predictors across Alcator C-Mod, DIII-D, and EAST — the companion to disruption-py.
+          - name: fusion_surrogates
+            url: https://github.com/google-deepmind/fusion_surrogates
+            status: open
+            lang: Python
+            install: pip
+            desc: Google DeepMind's library of JAX surrogate transport models, including the QuaLiKiz-trained QLKNN networks used by TORAX.
+          - name: fusion_tcv
+            url: https://github.com/google-deepmind/deepmind-research/tree/master/fusion_tcv
+            status: open
+            lang: Python
+            install: source
+            desc: Reference environment and agent-interface code from DeepMind's Nature 2022 deep-reinforcement-learning magnetic control of TCV plasmas.
+          - name: TearingAvoidance
+            url: https://github.com/PlasmaControl/TearingAvoidance
+            status: open
+            lang: Python
+            install: source
+            desc: Training code for the Nature 2024 deep-RL tearing-instability avoidance controller demonstrated on DIII-D.
+          - name: mycela
+            url: https://github.com/firstlightfusion/mycela
+            status: open
+            lang: Rust
+            install: source
+            desc: Distributed control-system framework and UI toolkit published by First Light Fusion from its experimental-controls stack.
+
+      - id: diagnostics
+        title: Diagnostics & synthetic diagnostics
+        entries:
+          - name: Cherab
+            url: https://github.com/cherab/core
+            status: open
+            lang: Python
+            install: pip
+            desc: Spectroscopic modeling framework for synthetic diagnostics, built on the Raysect ray-tracer.
+          - name: FIDASIM
+            url: https://github.com/D3DEnergetic/FIDASIM
+            status: open
+            lang: Fortran
+            install: source
+            desc: Synthetic fast-ion D-alpha and neutral-beam diagnostic modeling.
+          - name: Raysect
+            url: https://github.com/raysect/source
+            status: open
+            lang: Python
+            install: pip
+            desc: Scientific ray-tracing engine powering Cherab's synthetic camera and spectrometer views.
+          - name: ToFu
+            url: https://github.com/ToFuProject/tofu
+            status: open
+            lang: Python
+            install: pip
+            desc: Open library for tomography and synthetic diagnostics in fusion devices, used for bolometry and soft-X-ray inversion workflows.
+
+      - id: icf
+        title: Inertial confinement & high-energy-density
+        notes:
+          - "The production ICF radiation-hydrodynamics codes (HYDRA, xRAGE, and kin) are export-controlled and not publicly distributed; EPOCH, Smilei, and WarpX above cover much of the open kinetic side of HED science."
+        entries:
+          - name: Flash-X
+            url: https://flash-x.org
+            status: open
+            lang: Fortran
+            install: source
+            desc: Multiphysics adaptive-mesh radiation-hydrodynamics code with a long heritage in HED and laboratory astrophysics.
+          - name: FLASH
+            url: https://flash.rochester.edu
+            status: registration
+            lang: Fortran
+            access: Register with the Flash Center at flash.rochester.edu
+            desc: Multiphysics radiation-MHD code from the Flash Center — a workhorse for magneto-inertial and magnetized HED fusion simulation.
+
+      - id: frameworks
+        title: General plasma frameworks & utilities
+        entries:
+          - name: fusion-energy org
+            url: https://github.com/fusion-energy
+            status: open
+            desc: GitHub organization of open fusion neutronics tools and workflows surrounding OpenMC, DAGMC, and Paramak.
+          - name: MDSplus
+            url: https://github.com/MDSplus/mdsplus
+            status: open
+            lang: C/Python
+            install: binary
+            desc: The data acquisition and storage system used by most magnetic fusion experiments worldwide.
+          - name: MFEM
+            url: https://github.com/mfem/mfem
+            status: open
+            lang: C++
+            install: conda
+            desc: Lightweight scalable finite-element library from LLNL, the numerical engine under several fusion codes.
+          - name: OMAS
+            url: https://github.com/gafusion/omas
+            status: open
+            lang: Python
+            install: pip
+            desc: Ordered Multidimensional Array Structure — Python data-schema layer implementing the ITER IMAS ontology.
+          - name: PlasmaPy
+            url: https://github.com/PlasmaPy/PlasmaPy
+            status: open
+            lang: Python
+            install: pip
+            desc: The community Python package for plasma physics — formulary, particles, diagnostics, and simulation primitives.
+          - name: Struphy
+            url: https://gitlab.mpcdf.mpg.de/struphy/struphy
+            status: open
+            lang: Python
+            install: pip
+            desc: Structure-preserving hybrid kinetic-fluid plasma simulation package from Max Planck IPP.
+
+  - title: Data
+    categories:
+
+      - id: datasets
+        title: Open experimental & simulation datasets
+        entries:
+          - name: FAIR MAST
+            url: https://mastapp.site
+            status: open
+            mirror:
+              label: API & code
+              url: https://github.com/ukaea/fair-mast
+            desc: UKAEA's open data service for the MAST spherical tokamak — thousands of shots, browsable and downloadable.
+          - name: OpenSTEP
+            url: https://github.com/ukaea/OpenSTEP
+            status: open
+            desc: Public data release of the STEP prototype fusion power plant tokamak design from UKAEA.
+          - name: IAEA Nuclear Data Services
+            url: https://www-nds.iaea.org
+            status: open
+            desc: The IAEA's portal of evaluated nuclear data libraries and related services.
+          - name: ITER Organization on GitHub
+            url: https://github.com/iterorganization
+            status: open
+            desc: ITER's open-source releases, including the IMAS data infrastructure and physics codes.
+          - name: SPARCPublic
+            url: https://github.com/cfs-energy/SPARCPublic
+            status: open
+            desc: Commonwealth Fusion Systems' public SPARC design data — equilibria, profiles, and reference scenarios.
+          - name: Zenodo — fusion energy records
+            url: https://zenodo.org/search?q=%22fusion%20energy%22
+            status: open
+            desc: CERN-hosted open repository where fusion datasets, code archives, and supplementary material receive citable DOIs; Kronos Fusion Energy's open research archive is published here.
+
+      - id: ml-data
+        title: Machine learning datasets & models
+        entries:
+          - name: ConStellaration
+            url: https://huggingface.co/datasets/proxima-fusion/constellaration
+            status: open
+            mirror:
+              label: CoilStellaration companion
+              url: https://huggingface.co/datasets/proxima-fusion/coilstellaration
+            desc: Proxima Fusion's open dataset of quasi-isodynamic stellarator boundaries with equilibria and performance metrics, the basis of an open optimization benchmark.
+          - name: TokaMark
+            url: https://huggingface.co/datasets/UKAEA-IBM-STFC/tokamark-v1
+            status: open
+            desc: Benchmark packaging harmonized diagnostic signals from over ten thousand real MAST tokamak shots into task-ready evaluations for AI models.
+          - name: TokaMind
+            url: https://huggingface.co/UKAEA-IBM-STFC/tokamind-base-v2
+            status: open
+            desc: Multi-modal Transformer foundation model for tokamak plasma dynamics, pretrained on MAST data via TokaMark.
+          - name: GyroSwin
+            url: https://huggingface.co/ml-jku/gyroswin_large
+            status: open
+            desc: Pretrained 5D neural surrogate for nonlinear gyrokinetic plasma turbulence, roughly a thousand times faster than the code it emulates.
+          - name: Fusion Equilibrium Challenge
+            url: https://huggingface.co/datasets/Sophelio/fusion-equilibrium-challenge
+            status: open
+            desc: Challenge dataset for predicting plasma magnetic equilibrium from control inputs and non-magnetic diagnostics on DIII-D and MAST data.
+          - name: NearAxisStellarators
+            url: https://huggingface.co/datasets/pedrocurvo/near-axis-stellarators
+            status: open
+            desc: Large dataset of stellarator configurations generated with the pyQSC near-axis expansion, pairing design parameters with derived properties for surrogate training.
+          - name: Pedestal Predictor
+            url: https://huggingface.co/SCS-Lab/pedestal-predictor-onnx
+            status: open
+            desc: DIII-D-trained ensemble predicting pedestal temperature, density, and rotation values, packaged as self-contained ONNX bundles for real-time inference.
+
+      - id: atomic-nuclear
+        title: Atomic, molecular & nuclear data
+        entries:
+          - name: ENDF/B (NNDC)
+            url: https://www.nndc.bnl.gov/endf/
+            status: open
+            desc: The US evaluated nuclear data file, from Brookhaven's National Nuclear Data Center.
+          - name: FENDL
+            url: https://www-nds.iaea.org/fendl/
+            status: open
+            desc: Fusion Evaluated Nuclear Data Library — the IAEA-curated nuclear data library for fusion neutronics.
+          - name: IAEA AMDIS
+            url: https://amdis.iaea.org
+            status: open
+            desc: Atomic and molecular data for fusion, including the ALADDIN database and CollisionDB.
+          - name: JEFF (OECD NEA)
+            url: https://www.oecd-nea.org/dbdata/jeff/
+            status: open
+            desc: The Joint Evaluated Fission and Fusion nuclear data library from the OECD Nuclear Energy Agency.
+          - name: NIST Atomic Spectra Database
+            url: https://physics.nist.gov/asd
+            status: open
+            desc: Reference wavelengths, energy levels, and transition probabilities.
+          - name: OPEN-ADAS
+            url: https://open.adas.ac.uk
+            status: open
+            desc: Freely downloadable subset of the Atomic Data and Analysis Structure — ionization, recombination, and radiation rates for fusion plasmas.
+          - name: TENDL
+            url: https://tendl.web.psi.ch/home.html
+            status: open
+            mirror:
+              label: NEA Data Bank mirror
+              url: https://databank.io.oecd-nea.org/data/tendl/
+            desc: TALYS-based evaluated nuclear data library, the standard companion to FISPACT-II activation calculations.
+
+      - id: standards
+        title: Standards & interoperability
+        entries:
+          - name: FreeQDSK
+            url: https://github.com/freegs-plasma/FreeQDSK
+            status: open
+            lang: Python
+            install: pip
+            desc: The de-facto G-EQDSK equilibrium exchange format, implemented cleanly (also listed under equilibrium).
+          - name: IMAS Data Dictionary
+            url: https://github.com/iterorganization/IMAS-Data-Dictionary
+            status: open
+            desc: The ITER-standard ontology for describing fusion experiments and simulations.
+          - name: IMAS-Python
+            url: https://github.com/iterorganization/IMAS-Python
+            status: open
+            lang: Python
+            install: pip
+            desc: Pure-Python library for reading and writing IMAS data structures.
+          - name: OMAS
+            url: https://github.com/gafusion/omas
+            status: open
+            lang: Python
+            install: pip
+            desc: Practical Python implementation of the IMAS schema over NetCDF/HDF5/JSON (also listed under frameworks).
+
+  - title: Learning
+    categories:
+
+      - id: textbooks
+        title: Textbooks & foundational papers
+        entries:
+          - name: Freidberg, "Plasma Physics and Fusion Energy"
+            url: https://doi.org/10.1017/CBO9780511755705
+            desc: The standard first textbook for fusion-oriented plasma physics.
+          - name: Chen, "Introduction to Plasma Physics and Controlled Fusion"
+            url: https://link.springer.com/book/10.1007/978-3-319-22309-4
+            desc: The classic gentle introduction to plasma physics.
+          - name: Wesson & Campbell, "Tokamaks"
+            url: https://global.oup.com/academic/product/tokamaks-9780198509226
+            desc: The encyclopedic reference on tokamak physics and engineering.
+          - name: Stacey, "Fusion"
+            url: https://doi.org/10.1002/9783527629312
+            desc: Standard graduate textbook spanning the physics and technology of magnetic confinement fusion.
+          - name: Dolan, "Magnetic Fusion Technology"
+            url: https://doi.org/10.1007/978-1-4471-5556-0
+            desc: Comprehensive reference on the engineering systems of magnetic fusion devices.
+          - name: Miyamoto, "Plasma Physics and Controlled Nuclear Fusion"
+            url: https://doi.org/10.1007/3-540-28097-9
+            desc: Graduate text on plasma physics fundamentals for fusion.
+          - name: Progress in the ITER Physics Basis
+            url: https://iopscience.iop.org/article/10.1088/0029-5515/47/6/S01
+            desc: The community-consensus physics basis for burning-plasma tokamaks, open access in Nuclear Fusion.
+
+      - id: courses
+        title: Courses, schools & lectures
+        entries:
+          - name: MIT OCW 22.611J — Introduction to Plasma Physics I
+            url: https://ocw.mit.edu/courses/22-611j-introduction-to-plasma-physics-i-fall-2003/
+            desc: Full graduate course materials, free.
+          - name: MIT OCW 22.012 — Seminar. Fusion and Plasma Physics
+            url: https://ocw.mit.edu/courses/22-012-seminar-fusion-and-plasma-physics-spring-2006/
+            desc: Approachable seminar-style introduction to fusion from MIT.
+          - name: EPFL Plasma Physics MOOC
+            url: https://www.edx.org/learn/physics/ecole-polytechnique-federale-de-lausanne-plasma-physics-introduction
+            desc: Introduction to plasma physics and fusion applications from EPFL's Swiss Plasma Center; free to audit on edX.
+          - name: PPPL Graduate Summer School
+            url: https://gss.pppl.gov
+            desc: Annual one-week plasma physics school with archived lectures.
+          - name: Culham Plasma Physics Summer School
+            url: https://culhamsummerschool.org.uk/
+            desc: UKAEA's two-week summer school in plasma physics and fusion, running since 1965.
+          - name: ITER International School
+            url: https://www.iter.org/public/education/iter-international-school
+            desc: Annual themed school for young fusion scientists and engineers, organized by ITER and Aix-Marseille University.
+          - name: FuseNet
+            url: https://fusenet.eu/
+            desc: The European Fusion Education Network — master's programs, PhD events, internships, and teaching material.
+          - name: DOE Fusion Energy Sciences
+            url: https://www.energy.gov/science/fes/fusion-energy-sciences
+            desc: Program overviews and primers from the US fusion science office.
+
+      - id: workshops
+        title: Hands-on workshops
+        entries:
+          - name: Fusion Neutronics Workshop
+            url: https://github.com/fusion-energy/neutronics-workshop
+            status: open
+            desc: Self-paced Jupyter workshop covering OpenMC, DAGMC, and Paramak for fusion neutronics.
+          - name: PlasmaPy example gallery
+            url: https://docs.plasmapy.org/en/stable/examples.html
+            status: open
+            desc: Notebook examples for computational plasma physics in Python.
+
+  - title: Community
+    categories:
+
+      - id: community
+        title: Organizations, news & sibling lists
+        notes:
+          - "Live feeds of open fusion repositories: GitHub topics [nuclear-fusion](https://github.com/topics/nuclear-fusion) and [plasma-physics](https://github.com/topics/plasma-physics)."
+          - "Sibling lists: [awesome-nuclear](https://github.com/paulromano/awesome-nuclear) · [awesome-ML-in-plasma-physics](https://github.com/kharitonov-ivan/awesome-ML-in-plasma-physics) · [List of plasma physics software (Wikipedia)](https://en.wikipedia.org/wiki/List_of_plasma_physics_software)."
+        entries:
+          - name: APS Division of Plasma Physics
+            url: https://engage.aps.org/dpp/home
+            desc: The main US plasma physics society and annual meeting.
+          - name: ANS Fusion Energy Division
+            url: https://fed.ans.org/
+            desc: The American Nuclear Society's Fusion Energy Division, host of the biennial TOFE conference.
+          - name: EUROfusion
+            url: https://euro-fusion.org
+            desc: The European fusion research consortium.
+          - name: Fusion Energy Base
+            url: https://www.fusionenergybase.com
+            desc: Tracking of fusion companies, projects, and technologies.
+          - name: Fusion Industry Association
+            url: https://www.fusionindustryassociation.org
+            desc: The trade association of private fusion companies; publishes the annual industry report.
+          - name: IAEA Fusion Portal
+            url: https://nucleus.iaea.org/sites/fusionportal/Pages/default.aspx
+            desc: The IAEA's fusion hub, including the Fusion Device Information System and Fusion Energy Conference materials.
+          - name: ITER Newsline
+            url: https://www.iter.org/news
+            desc: News from the world's largest fusion project.
+          - name: r/fusion
+            url: https://www.reddit.com/r/fusion/
+            desc: The main Reddit community for fusion energy discussion.
+          - name: U.S. Fusion Energy
+            url: https://usfusionenergy.org/
+            desc: US fusion outreach and education hub with explainers, K-12 materials, news, and a careers portal.

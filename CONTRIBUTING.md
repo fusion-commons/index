@@ -1,43 +1,51 @@
 # Contributing
 
-Thank you for helping map the fusion ecosystem. This list improves with every pair of eyes.
+Thank you for helping map the fusion ecosystem. This index improves with every pair of eyes.
+
+## Two ways to contribute
+
+1. **Easiest — open an issue.** Use the [*Add a resource*](../../issues/new/choose) template with the name, link, and a sentence on what it is. A maintainer does the rest.
+2. **Direct — edit the data.** Every entry lives in [`data/entries.yml`](data/entries.yml); `README.md` is generated from it. Add your entry there and open a pull request. If you can, regenerate the README too:
+
+   ```bash
+   pip install pyyaml
+   python scripts/build_readme.py
+   ```
+
+   If you can't, no problem — CI will tell us and a maintainer will regenerate on merge. **Please don't edit README.md by hand**; it gets overwritten by the generator.
 
 ## What belongs here
 
 An entry qualifies if it is:
 
-1. **Fusion-relevant** — used in, or directly useful for, fusion energy research or development (magnetic, inertial, or alternative concepts). General plasma tools qualify when the fusion community actually uses them.
-2. **Publicly reachable** — a public repository, a registration page, or an official distribution point. Links only: this list never re-hosts anyone's code or data.
+1. **Fusion-relevant** — used in, or directly useful for, fusion energy research or development (magnetic, inertial, or alternative concepts). General tools qualify when the fusion community demonstrably uses them — say how in the description.
+2. **Publicly reachable** — a public repository, a registration page, or an official distribution point, on any platform (GitHub, GitLab, Bitbucket, Hugging Face, or a project's own site). Links only: this index never re-hosts anyone's code or data.
 3. **Real** — released and usable (or historically significant), not an announcement or a paper without an artifact.
 
-We mark license status honestly:
+We mark access status honestly on software and data:
 
-- 🟢 open source (an OSI-approved or similar license; clone and run)
-- 🟡 free for research with registration or a signed agreement
-- 🔴 restricted distribution (export-controlled or institution-only)
+- 🟢 `status: open` — public source or data; clone and run
+- 🟡 `status: registration` — free for research after registration or a signed agreement (add an `access:` line saying where to ask — it feeds the access table)
+- 🔴 `status: restricted` — export-controlled or institution-only (included so people know the front door, with an `access:` line)
 
-Restricted codes are included when the community needs to know the front door, not to celebrate the restriction.
+Learning and community entries carry no status mark — leave the field out.
 
 ## Entry format
 
-Add your entry to the right category, keeping the category alphabetical (🟢 first, then 🟡, then 🔴):
-
-```markdown
-- 🟢 [Name](https://link-to-official-home) — One sentence: what it does and why it matters. Language.
+```yaml
+- name: CodeName
+  url: https://github.com/org/codename   # the OFFICIAL home, not a mirror or a paper
+  status: open
+  lang: Python          # main language — omit for data/learning entries
+  install: pip          # easiest path: pip | conda | julia | container | binary | source | service
+  desc: One factual sentence — what it is and why it matters.
 ```
 
-- Link to the **official** home (the repository or the project's own site), not a mirror or a paper.
-- One sentence, plain language, no superlatives unless earned ("the standard", "widely used" only when true).
-- For datasets and learning resources, drop the language tag.
+- Plain language; superlatives only when earned ("the standard", "widely used" only when true).
+- Entries are sorted automatically (🟢 first, then 🟡, then 🔴, alphabetical within each) — just add yours anywhere in the right category.
+- One addition or fix per pull request — easy to review, fast to merge.
 
-## How to contribute
-
-1. **One addition or fix per pull request** — easy to review, fast to merge.
-2. Edit `README.md` directly on GitHub (the pencil icon) or fork and PR.
-3. For a suggestion without a PR, open an issue with the **Add a resource** template.
-4. Broken link? The weekly link check usually catches these, but an issue or PR is always welcome.
-
-Every PR is reviewed by a maintainer before merge. By contributing you agree your contribution is licensed under CC BY 4.0.
+Every pull request is reviewed by a maintainer before merge. By contributing you agree your contribution is licensed under CC BY 4.0.
 
 ## Conduct
 

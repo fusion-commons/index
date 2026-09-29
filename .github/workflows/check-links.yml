@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "0 6 * * 1" # Mondays 06:00 UTC
   pull_request:
-    paths: ["README.md", "CONTRIBUTING.md"]
+    paths: ["README.md", "CONTRIBUTING.md", "data/**", "guides/**"]
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
             --no-progress
             --max-retries 3
             --accept 200,201,202,203,204,206,301,302,303,307,308,403,429
-            README.md CONTRIBUTING.md
+            README.md CONTRIBUTING.md guides/*.md
           fail: true
       - name: Open issue on failure
         if: failure() && github.event_name == 'schedule'

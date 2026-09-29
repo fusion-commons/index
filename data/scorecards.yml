@@ -1,0 +1,43 @@
+# "Which code should I use?" scorecards, rendered into the README under their category.
+# Editorial guidance for newcomers — details evolve, so read each code's docs before committing.
+# Cell values are plain text; 🟩 = easy/yes, 🟨 = moderate/partial, — = no / not applicable.
+
+scorecards:
+  - category: equilibrium
+    title: Choosing an equilibrium code
+    note: Editorial guidance for newcomers — start here, then read each code's documentation.
+    columns: [Code, Geometry, First run, GPU, License]
+    rows:
+      - ["[FreeGS](https://github.com/freegs-plasma/freegs)", "Tokamak (free boundary)", "🟩 pip install, laptop", "—", "🟢 open"]
+      - ["[DESC](https://github.com/PlasmaControl/DESC)", "Stellarator + tokamak", "🟩 pip install, laptop", "🟩 (JAX)", "🟢 open"]
+      - ["[TokaMaker (OFT)](https://github.com/openfusiontoolkit/OpenFUSIONToolkit)", "Tokamak (free boundary)", "🟨 build from source", "—", "🟢 open"]
+      - ["[VMEC (PARVMEC / VMEC2000)](https://github.com/ORNL-Fusion/PARVMEC)", "Stellarator + tokamak (nested surfaces)", "🟨 build from source", "—", "🟢 open"]
+      - ["[SPEC](https://github.com/PrincetonUniversity/SPEC)", "Stellarator (islands & chaos)", "🟨 build from source", "—", "🟢 open"]
+      - ["[EFIT](https://omfit.io/modules/mod_EFIT.html)", "Tokamak (reconstruction from experiment)", "🟨 via OMFIT", "—", "🟡 registration"]
+
+  - category: gyrokinetics
+    title: Choosing a gyrokinetic code
+    note: Editorial guidance for newcomers — start here, then read each code's documentation.
+    columns: [Code, Geometry, Approach, GPU, License]
+    rows:
+      - ["[QuaLiKiz](https://gitlab.com/qualikiz-group/QuaLiKiz)", "Tokamak", "Quasilinear (fast, reduced)", "—", "🟢 open"]
+      - ["[CGYRO (GACODE)](https://github.com/gafusion/gacode)", "Tokamak, flux tube", "Eulerian, nonlinear", "🟩", "🟢 open"]
+      - ["[Gkeyll](https://github.com/ammarhakim/gkylzero)", "Tokamak + mirror, incl. edge", "Continuum, full-f capable", "🟩", "🟢 open"]
+      - ["[stella](https://github.com/stellaGK/stella)", "Stellarator + tokamak", "Eulerian, operator-split", "—", "🟢 open"]
+      - ["[GKW](https://bitbucket.org/gkw/gkw/src)", "Tokamak, global + flux tube", "Eulerian, nonlinear", "—", "🟢 open"]
+      - ["[GENE](https://genecode.org)", "Tokamak + stellarator, global", "Eulerian, nonlinear", "🟨", "🟡 registration"]
+      - ["[GS2](https://bitbucket.org/gyrokinetics/gs2)", "Tokamak + stellarator, flux tube", "Eulerian, nonlinear", "—", "🟡 registration"]
+      - ["[XGC](https://xgc.pppl.gov)", "Whole volume, incl. edge", "Particle-in-cell, full-f", "🟩", "🟡 registration"]
+
+  - category: integrated
+    title: Choosing an integrated modeling or systems code
+    note: Editorial guidance for newcomers — start here, then read each code's documentation.
+    columns: [Code, Scope, First run, Language, License]
+    rows:
+      - ["[cfspopcon](https://github.com/cfs-energy/cfspopcon)", "0-D operating space (POPCON)", "🟩 pip install, laptop", "Python", "🟢 open"]
+      - ["[TORAX](https://github.com/google-deepmind/torax)", "1-D core transport, differentiable", "🟩 pip install, laptop", "Python", "🟢 open"]
+      - ["[PROCESS](https://github.com/ukaea/PROCESS)", "Whole-plant systems optimization", "🟨 build from source", "Python/Fortran", "🟢 open"]
+      - ["[Bluemira](https://github.com/Fusion-Power-Plant-Framework/bluemira)", "Plant design & engineering", "🟨 conda environment", "Python", "🟢 open"]
+      - ["[FUSE](https://github.com/ProjectTorreyPines/FUSE.jl)", "Whole facility, differentiable", "🟨 Julia package", "Julia", "🟢 open"]
+      - ["[OMFIT](https://omfit.io)", "Framework gluing many codes", "🟨 registration", "Python", "🟡 registration"]
+      - ["[TRANSP](https://transp.pppl.gov)", "Experiment analysis & prediction", "🟨 hosted service", "Fortran", "🟡 registration"]
