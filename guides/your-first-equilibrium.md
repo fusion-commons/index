@@ -69,7 +69,7 @@ plotEquilibrium(eq)
 ## Where to go next
 
 - Change the X-point positions and target current and watch the shape respond.
-- FreeGS's [examples directory](https://github.com/freegs-plasma/freegs/tree/master/examples) covers real machine geometries.
+- FreeGS's [documentation](https://freegs.readthedocs.io) covers real machine geometries.
 - Ready for experiment-grade reconstruction? That's [EFIT's](../README.md#plasma-equilibrium--mhd) job; for stellarators, start with [DESC](https://github.com/PlasmaControl/DESC).
 
 ---

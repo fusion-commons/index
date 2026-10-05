@@ -4,7 +4,7 @@ Thank you for helping map the fusion ecosystem. This index improves with every p
 
 ## Two ways to contribute
 
-1. **Easiest — open an issue.** Use the [*Add a resource*](../../issues/new/choose) template with the name, link, and a sentence on what it is. A maintainer does the rest.
+1. **Easiest — open an issue.** Use the [*Add a resource*](https://github.com/fusion-commons/index/issues/new/choose) template with the name, link, and a sentence on what it is. A maintainer does the rest.
 2. **Direct — edit the data.** Every entry lives in [`data/entries.yml`](data/entries.yml); `README.md` is generated from it. Add your entry there and open a pull request. If you can, regenerate the README too:
 
    ```bash

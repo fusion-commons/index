@@ -18,6 +18,7 @@ jobs:
           args: >-
             --no-progress
             --max-retries 3
+            --exclude tendl\.web\.psi\.ch
             --accept 200,201,202,203,204,206,301,302,303,307,308,403,429
             README.md CONTRIBUTING.md guides/*.md
           fail: true

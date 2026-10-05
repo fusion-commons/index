@@ -398,7 +398,7 @@ The Fusion Commons is built in phases, each useful on its own:
 
 Additions and corrections are very welcome — this map gets better with every pair of eyes.
 
-- **Easiest:** [open an issue](../../issues/new/choose) with the *Add a resource* template — maintainers do the rest.
+- **Easiest:** [open an issue](https://github.com/fusion-commons/index/issues/new/choose) with the *Add a resource* template — maintainers do the rest.
 - **Direct:** edit [`data/entries.yml`](data/entries.yml) and open a pull request; the README regenerates from it.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry format and quality bar. Every pull request is reviewed by a maintainer before merge.
