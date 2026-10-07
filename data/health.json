@@ -9,7 +9,7 @@
  },
  "github.com/BLAST-WarpX/warpx": {
   "stars": 491,
-  "updated": "2026-10-05"
+  "updated": "2026-10-07"
  },
  "github.com/ComputationalRadiationPhysics/picongpu": {
   "stars": 795,
@@ -17,15 +17,15 @@
  },
  "github.com/D3DEnergetic/FIDASIM": {
   "stars": 39,
-  "updated": "2026-08-08"
+  "updated": "2026-10-07"
  },
  "github.com/Fusion-Power-Plant-Framework/bluemira": {
   "stars": 110,
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
  },
  "github.com/FusionComputingLab/freegsnke": {
   "stars": 94,
-  "updated": "2026-10-05"
+  "updated": "2026-10-06"
  },
  "github.com/IRFM/METIS": {
   "stars": 25,
@@ -73,14 +73,14 @@
  },
  "github.com/PlasmaControl/DESC": {
   "stars": 168,
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
  },
  "github.com/PlasmaControl/TearingAvoidance": {
   "stars": 6,
   "updated": "2024-03-14"
  },
  "github.com/PlasmaPy/PlasmaPy": {
-  "stars": 715,
+  "stars": 716,
   "updated": "2026-10-06"
  },
  "github.com/PrincetonUniversity/FOCUS": {
@@ -97,11 +97,11 @@
  },
  "github.com/ProjectTorreyPines/FUSE.jl": {
   "stars": 92,
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
  },
  "github.com/SmileiPIC/Smilei": {
   "stars": 449,
-  "updated": "2026-10-02"
+  "updated": "2026-10-06"
  },
  "github.com/Thea-Energy/stellarvista": {
   "stars": 16,
@@ -116,12 +116,12 @@
   "updated": "2026-10-06"
  },
  "github.com/ammarhakim/gkylzero": {
-  "stars": 111,
-  "updated": "2026-10-06"
+  "stars": 112,
+  "updated": "2026-10-07"
  },
  "github.com/ascot4fusion/ascot5": {
   "stars": 60,
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
  },
  "github.com/beam-tracing/Scotty": {
   "stars": 12,
@@ -193,7 +193,7 @@
  },
  "github.com/fusion-energy/paramak": {
   "stars": 108,
-  "updated": "2026-10-05"
+  "updated": "2026-10-07"
  },
  "github.com/gafusion/gacode": {
   "stars": 42,
@@ -204,7 +204,7 @@
   "updated": "2026-10-01"
  },
  "github.com/google-deepmind/deepmind-research": {
-  "stars": 15215,
+  "stars": 15216,
   "updated": "2026-06-17"
  },
  "github.com/google-deepmind/fusion_surrogates": {
@@ -213,11 +213,11 @@
  },
  "github.com/google-deepmind/torax": {
   "stars": 730,
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
  },
  "github.com/gyselax/gyselalibxx": {
   "stars": 55,
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
  },
  "github.com/hiddenSymmetries/VMEC2000": {
   "stars": 18,
@@ -229,7 +229,7 @@
  },
  "github.com/hiddenSymmetries/simsopt": {
   "stars": 168,
-  "updated": "2026-10-05"
+  "updated": "2026-10-06"
  },
  "github.com/hoppe93/SOFT2": {
   "stars": 11,
@@ -244,8 +244,8 @@
   "updated": "2026-10-06"
  },
  "github.com/idaholab/moose": {
-  "stars": 2371,
-  "updated": "2026-10-06"
+  "stars": 2373,
+  "updated": "2026-10-07"
  },
  "github.com/iterorganization/IMAS-Data-Dictionary": {
   "stars": 71,
@@ -256,8 +256,8 @@
   "updated": "2026-08-06"
  },
  "github.com/lammps/lammps": {
-  "stars": 3083,
-  "updated": "2026-10-06"
+  "stars": 3086,
+  "updated": "2026-10-07"
  },
  "github.com/landreman/pyQSC": {
   "stars": 17,
@@ -272,8 +272,8 @@
   "updated": "2025-06-19"
  },
  "github.com/mfem/mfem": {
-  "stars": 2257,
-  "updated": "2026-10-06"
+  "stars": 2258,
+  "updated": "2026-10-07"
  },
  "github.com/openfusiontoolkit/OpenFUSIONToolkit": {
   "stars": 87,
@@ -281,7 +281,7 @@
  },
  "github.com/openmc-dev/openmc": {
   "stars": 1114,
-  "updated": "2026-10-05"
+  "updated": "2026-10-07"
  },
  "github.com/osiris-code/osiris": {
   "stars": 84,
@@ -289,7 +289,7 @@
  },
  "github.com/pabloprf/MITIM-fusion": {
   "stars": 24,
-  "updated": "2026-10-05"
+  "updated": "2026-10-07"
  },
  "github.com/piScope/PetraM_Base": {
   "stars": 0,
@@ -336,8 +336,8 @@
   "updated": "2026-09-03"
  },
  "github.com/tokamak-energy/gsfit": {
-  "stars": 38,
-  "updated": "2026-10-01"
+  "stars": 39,
+  "updated": "2026-10-06"
  },
  "github.com/ukaea/OpenSTEP": {
   "stars": 7,
@@ -345,7 +345,7 @@
  },
  "github.com/ukaea/PROCESS": {
   "stars": 72,
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
  },
  "gitlab.com/foam-for-nuclear/GeN-Foam": {
   "stars": 37,
