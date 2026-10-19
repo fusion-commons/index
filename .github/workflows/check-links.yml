@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check links
-        uses: lycheeverse/lychee-action@v2
+        id: lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
         with:
           args: >-
             --no-progress
@@ -26,11 +27,16 @@ jobs:
             --exclude mastapp\.site
             --accept 200,201,202,203,204,206,301,302,303,307,308,403,429
             README.md CONTRIBUTING.md guides/*.md
-          fail: true
-      - name: Open issue on failure
-        if: failure() && github.event_name == 'schedule'
-        uses: peter-evans/create-issue-from-file@v5
+          fail: false
+      - name: Open issue on broken links (scheduled run)
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'schedule'
+        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd # v5
         with:
           title: "Weekly link check found broken links"
           content-filepath: ./lychee/out.md
           labels: broken-link
+      - name: Fail the run on broken links (pull requests)
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'pull_request'
+        run: |
+          echo "Broken links found in this PR — see the lychee report above."
+          exit 1
