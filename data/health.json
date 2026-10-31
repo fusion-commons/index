@@ -12,7 +12,7 @@
   "updated": "2026-10-30"
  },
  "github.com/ComputationalRadiationPhysics/picongpu": {
-  "stars": 797,
+  "stars": 798,
   "updated": "2026-10-30"
  },
  "github.com/D3DEnergetic/FIDASIM": {
@@ -21,10 +21,10 @@
  },
  "github.com/Fusion-Power-Plant-Framework/bluemira": {
   "stars": 112,
-  "updated": "2026-10-28"
+  "updated": "2026-10-30"
  },
  "github.com/FusionComputingLab/freegsnke": {
-  "stars": 98,
+  "stars": 99,
   "updated": "2026-10-29"
  },
  "github.com/IRFM/METIS": {
@@ -92,15 +92,15 @@
   "updated": "2026-06-23"
  },
  "github.com/PrincetonUniversity/STELLOPT": {
-  "stars": 126,
+  "stars": 127,
   "updated": "2026-10-29"
  },
  "github.com/ProjectTorreyPines/FUSE.jl": {
   "stars": 93,
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  "github.com/SmileiPIC/Smilei": {
-  "stars": 456,
+  "stars": 458,
   "updated": "2026-10-24"
  },
  "github.com/Thea-Energy/stellarvista": {
@@ -117,7 +117,7 @@
  },
  "github.com/ammarhakim/gkylzero": {
   "stars": 119,
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  "github.com/ascot4fusion/ascot5": {
   "stars": 60,
@@ -129,7 +129,7 @@
  },
  "github.com/boutproject/BOUT-dev": {
   "stars": 246,
-  "updated": "2026-10-29"
+  "updated": "2026-10-30"
  },
  "github.com/boutproject/SD1D": {
   "stars": 22,
@@ -137,7 +137,7 @@
  },
  "github.com/boutproject/hermes-3": {
   "stars": 69,
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  "github.com/cfs-energy/SPARCPublic": {
   "stars": 62,
@@ -153,11 +153,11 @@
  },
  "github.com/chalmersplasmatheory/DREAM": {
   "stars": 50,
-  "updated": "2026-10-29"
+  "updated": "2026-10-30"
  },
  "github.com/cherab/core": {
   "stars": 49,
-  "updated": "2026-10-29"
+  "updated": "2026-10-30"
  },
  "github.com/compxco/cql3d": {
   "stars": 12,
@@ -173,7 +173,7 @@
  },
  "github.com/festim-dev/FESTIM": {
   "stars": 137,
-  "updated": "2026-10-29"
+  "updated": "2026-10-30"
  },
  "github.com/firstlightfusion/mycela": {
   "stars": 0,
@@ -204,7 +204,7 @@
   "updated": "2026-10-30"
  },
  "github.com/google-deepmind/deepmind-research": {
-  "stars": 15258,
+  "stars": 15260,
   "updated": "2026-06-17"
  },
  "github.com/google-deepmind/fusion_surrogates": {
@@ -213,7 +213,7 @@
  },
  "github.com/google-deepmind/torax": {
   "stars": 746,
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  "github.com/gyselax/gyselalibxx": {
   "stars": 55,
@@ -228,7 +228,7 @@
   "updated": "2026-08-07"
  },
  "github.com/hiddenSymmetries/simsopt": {
-  "stars": 172,
+  "stars": 173,
   "updated": "2026-10-26"
  },
  "github.com/hoppe93/SOFT2": {
@@ -241,11 +241,11 @@
  },
  "github.com/idaholab/TMAP8": {
   "stars": 38,
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  "github.com/idaholab/moose": {
-  "stars": 2397,
-  "updated": "2026-10-30"
+  "stars": 2399,
+  "updated": "2026-10-31"
  },
  "github.com/iterorganization/IMAS-Data-Dictionary": {
   "stars": 71,
@@ -253,14 +253,14 @@
  },
  "github.com/iterorganization/IMAS-Python": {
   "stars": 74,
-  "updated": "2026-10-26"
+  "updated": "2026-10-30"
  },
  "github.com/lammps/lammps": {
-  "stars": 3115,
-  "updated": "2026-10-29"
+  "stars": 3117,
+  "updated": "2026-10-30"
  },
  "github.com/landreman/pyQSC": {
-  "stars": 17,
+  "stars": 18,
   "updated": "2025-01-25"
  },
  "github.com/landreman/regcoil": {
@@ -273,15 +273,15 @@
  },
  "github.com/mfem/mfem": {
   "stars": 2279,
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  "github.com/openfusiontoolkit/OpenFUSIONToolkit": {
-  "stars": 88,
-  "updated": "2026-10-29"
+  "stars": 89,
+  "updated": "2026-10-31"
  },
  "github.com/openmc-dev/openmc": {
   "stars": 1130,
-  "updated": "2026-10-26"
+  "updated": "2026-10-31"
  },
  "github.com/osiris-code/osiris": {
   "stars": 86,
@@ -325,7 +325,7 @@
  },
  "github.com/stellarmesh/stellarmesh": {
   "stars": 83,
-  "updated": "2026-10-27"
+  "updated": "2026-10-31"
  },
  "github.com/svalinn/ALARA": {
   "stars": 39,
