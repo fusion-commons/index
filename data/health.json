@@ -73,7 +73,7 @@
  },
  "github.com/PlasmaControl/DESC": {
   "stars": 172,
-  "updated": "2026-10-30"
+  "updated": "2026-11-01"
  },
  "github.com/PlasmaControl/TearingAvoidance": {
   "stars": 6,
@@ -97,10 +97,10 @@
  },
  "github.com/ProjectTorreyPines/FUSE.jl": {
   "stars": 93,
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
  },
  "github.com/SmileiPIC/Smilei": {
-  "stars": 458,
+  "stars": 459,
   "updated": "2026-10-24"
  },
  "github.com/Thea-Energy/stellarvista": {
@@ -137,7 +137,7 @@
  },
  "github.com/boutproject/hermes-3": {
   "stars": 69,
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
  },
  "github.com/cfs-energy/SPARCPublic": {
   "stars": 62,
@@ -204,7 +204,7 @@
   "updated": "2026-10-30"
  },
  "github.com/google-deepmind/deepmind-research": {
-  "stars": 15260,
+  "stars": 15262,
   "updated": "2026-06-17"
  },
  "github.com/google-deepmind/fusion_surrogates": {
@@ -213,11 +213,11 @@
  },
  "github.com/google-deepmind/torax": {
   "stars": 746,
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
  },
  "github.com/gyselax/gyselalibxx": {
   "stars": 55,
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  "github.com/hiddenSymmetries/VMEC2000": {
   "stars": 19,
@@ -241,11 +241,11 @@
  },
  "github.com/idaholab/TMAP8": {
   "stars": 38,
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
  },
  "github.com/idaholab/moose": {
   "stars": 2399,
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
  },
  "github.com/iterorganization/IMAS-Data-Dictionary": {
   "stars": 71,
@@ -256,8 +256,8 @@
   "updated": "2026-10-30"
  },
  "github.com/lammps/lammps": {
-  "stars": 3117,
-  "updated": "2026-10-30"
+  "stars": 3118,
+  "updated": "2026-11-01"
  },
  "github.com/landreman/pyQSC": {
   "stars": 18,
@@ -272,11 +272,11 @@
   "updated": "2025-06-19"
  },
  "github.com/mfem/mfem": {
-  "stars": 2279,
-  "updated": "2026-10-31"
+  "stars": 2281,
+  "updated": "2026-11-01"
  },
  "github.com/openfusiontoolkit/OpenFUSIONToolkit": {
-  "stars": 89,
+  "stars": 90,
   "updated": "2026-10-31"
  },
  "github.com/openmc-dev/openmc": {
@@ -321,7 +321,7 @@
  },
  "github.com/stellaGK/stella": {
   "stars": 34,
-  "updated": "2026-10-29"
+  "updated": "2026-10-31"
  },
  "github.com/stellarmesh/stellarmesh": {
   "stars": 83,
