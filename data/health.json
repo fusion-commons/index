@@ -9,11 +9,11 @@
  },
  "github.com/BLAST-WarpX/warpx": {
   "stars": 500,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "github.com/ComputationalRadiationPhysics/picongpu": {
   "stars": 798,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "github.com/D3DEnergetic/FIDASIM": {
   "stars": 39,
@@ -21,7 +21,7 @@
  },
  "github.com/Fusion-Power-Plant-Framework/bluemira": {
   "stars": 112,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "github.com/FusionComputingLab/freegsnke": {
   "stars": 99,
@@ -53,7 +53,7 @@
  },
  "github.com/MDSplus/mdsplus": {
   "stars": 98,
-  "updated": "2026-10-27"
+  "updated": "2026-11-02"
  },
  "github.com/MIT-PSFC/DisruptionBench": {
   "stars": 2,
@@ -73,7 +73,7 @@
  },
  "github.com/PlasmaControl/DESC": {
   "stars": 172,
-  "updated": "2026-11-01"
+  "updated": "2026-11-02"
  },
  "github.com/PlasmaControl/TearingAvoidance": {
   "stars": 6,
@@ -97,7 +97,7 @@
  },
  "github.com/ProjectTorreyPines/FUSE.jl": {
   "stars": 93,
-  "updated": "2026-11-01"
+  "updated": "2026-11-02"
  },
  "github.com/SmileiPIC/Smilei": {
   "stars": 459,
@@ -117,7 +117,7 @@
  },
  "github.com/ammarhakim/gkylzero": {
   "stars": 119,
-  "updated": "2026-10-31"
+  "updated": "2026-11-02"
  },
  "github.com/ascot4fusion/ascot5": {
   "stars": 60,
@@ -125,11 +125,11 @@
  },
  "github.com/beam-tracing/Scotty": {
   "stars": 13,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "github.com/boutproject/BOUT-dev": {
   "stars": 246,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "github.com/boutproject/SD1D": {
   "stars": 22,
@@ -137,7 +137,7 @@
  },
  "github.com/boutproject/hermes-3": {
   "stars": 69,
-  "updated": "2026-11-01"
+  "updated": "2026-11-02"
  },
  "github.com/cfs-energy/SPARCPublic": {
   "stars": 62,
@@ -157,7 +157,7 @@
  },
  "github.com/cherab/core": {
   "stars": 49,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "github.com/compxco/cql3d": {
   "stars": 12,
@@ -177,7 +177,7 @@
  },
  "github.com/firstlightfusion/mycela": {
   "stars": 0,
-  "updated": "2026-10-28"
+  "updated": "2026-11-02"
  },
  "github.com/freegs-plasma/FreeQDSK": {
   "stars": 19,
@@ -197,14 +197,14 @@
  },
  "github.com/gafusion/gacode": {
   "stars": 44,
-  "updated": "2026-10-27"
+  "updated": "2026-11-02"
  },
  "github.com/gafusion/omas": {
   "stars": 42,
   "updated": "2026-10-30"
  },
  "github.com/google-deepmind/deepmind-research": {
-  "stars": 15262,
+  "stars": 15266,
   "updated": "2026-06-17"
  },
  "github.com/google-deepmind/fusion_surrogates": {
@@ -212,12 +212,12 @@
   "updated": "2026-10-19"
  },
  "github.com/google-deepmind/torax": {
-  "stars": 746,
-  "updated": "2026-11-01"
+  "stars": 747,
+  "updated": "2026-11-02"
  },
  "github.com/gyselax/gyselalibxx": {
   "stars": 55,
-  "updated": "2026-10-31"
+  "updated": "2026-11-02"
  },
  "github.com/hiddenSymmetries/VMEC2000": {
   "stars": 19,
@@ -244,8 +244,8 @@
   "updated": "2026-11-01"
  },
  "github.com/idaholab/moose": {
-  "stars": 2399,
-  "updated": "2026-11-01"
+  "stars": 2400,
+  "updated": "2026-11-02"
  },
  "github.com/iterorganization/IMAS-Data-Dictionary": {
   "stars": 71,
@@ -253,11 +253,11 @@
  },
  "github.com/iterorganization/IMAS-Python": {
   "stars": 74,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "github.com/lammps/lammps": {
-  "stars": 3118,
-  "updated": "2026-11-01"
+  "stars": 3120,
+  "updated": "2026-11-02"
  },
  "github.com/landreman/pyQSC": {
   "stars": 18,
@@ -273,11 +273,11 @@
  },
  "github.com/mfem/mfem": {
   "stars": 2281,
-  "updated": "2026-11-01"
+  "updated": "2026-11-02"
  },
  "github.com/openfusiontoolkit/OpenFUSIONToolkit": {
   "stars": 90,
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
  },
  "github.com/openmc-dev/openmc": {
   "stars": 1130,
@@ -305,7 +305,7 @@
  },
  "github.com/proximafusion/vmecpp": {
   "stars": 255,
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
  },
  "github.com/pyne/pyne": {
   "stars": 320,
@@ -332,7 +332,7 @@
   "updated": "2026-10-27"
  },
  "github.com/svalinn/DAGMC": {
-  "stars": 136,
+  "stars": 137,
   "updated": "2026-09-03"
  },
  "github.com/tokamak-energy/gsfit": {
@@ -345,7 +345,7 @@
  },
  "github.com/ukaea/PROCESS": {
   "stars": 75,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "gitlab.com/foam-for-nuclear/GeN-Foam": {
   "stars": 37,
@@ -357,7 +357,7 @@
  },
  "gitlab.mpcdf.mpg.de/gvec-group/gvec": {
   "stars": 27,
-  "updated": "2026-10-30"
+  "updated": "2026-11-02"
  },
  "gitlab.mpcdf.mpg.de/struphy/struphy": {
   "stars": 10,
