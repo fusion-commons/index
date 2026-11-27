@@ -667,6 +667,12 @@ sections:
             lang: Rust
             install: source
             desc: Distributed control-system framework and UI toolkit published by First Light Fusion from its experimental-controls stack.
+          - name: Plasmax
+            url: https://github.com/TheodoreWolf/plasmax
+            status: open
+            lang: Python
+            install: pip
+            desc: JAX-native tokamak kinetic-control environments built on TORAX, with ITER/SPARC/STEP/KSTAR-inspired scenarios for reinforcement-learning control research.
 
       - id: diagnostics
         title: Diagnostics & synthetic diagnostics

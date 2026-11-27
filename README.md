@@ -246,6 +246,7 @@ Entries carry a short metadata tag — language, easiest install path (`pip`, `c
 - 🟢 [KODEX](https://github.com/KronosFE/kronos-ml) — The Kronos family of codes — a fleet of benchmarked AI/ML fusion surrogates and quantum tools spanning transport, magnet quench warning, disruption prediction, breeding, and control, each release archived with citable DOIs ([PyPI](https://pypi.org/project/kronos-fusion-ml/)). `Python · pip`
 - 🟢 [kronos-quantum](https://github.com/KronosFE/kronos-quantum) — Runnable quantum-computing-for-fusion codes with a white paper — honest simulators today, pluggable into real quantum hardware as the field matures. `Python · source`
 - 🟢 [mycela](https://github.com/firstlightfusion/mycela) — Distributed control-system framework and UI toolkit published by First Light Fusion from its experimental-controls stack. `Rust · source`
+- 🟢 [Plasmax](https://github.com/TheodoreWolf/plasmax) — JAX-native tokamak kinetic-control environments built on TORAX, with ITER/SPARC/STEP/KSTAR-inspired scenarios for reinforcement-learning control research. `Python · pip`
 - 🟢 [TearingAvoidance](https://github.com/PlasmaControl/TearingAvoidance) — Training code for the Nature 2024 deep-RL tearing-instability avoidance controller demonstrated on DIII-D. `Python · source`
 - 🟢 [TORAX](https://github.com/google-deepmind/torax) — Also listed under integrated modeling — its differentiability makes it a natural base for control and ML research. `Python · pip`
 
