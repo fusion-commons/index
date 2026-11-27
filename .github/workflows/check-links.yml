@@ -28,13 +28,26 @@ jobs:
             --accept 200,201,202,203,204,206,301,302,303,307,308,403,429
             README.md CONTRIBUTING.md guides/*.md
           fail: false
-      - name: Open issue on broken links (scheduled run)
+      - name: Open or refresh the standing link-check issue (scheduled run)
         if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'schedule'
-        uses: peter-evans/create-issue-from-file@e8ef132d6df98ed982188e460ebb3b5d4ef3a9cd # v5
-        with:
-          title: "Weekly link check found broken links"
-          content-filepath: ./lychee/out.md
-          labels: broken-link
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Reuse ONE standing issue instead of opening a new one every week:
+          # find the most recent broken-link issue (open or closed), refresh its body
+          # and reopen it; create it only the first time.
+          num=$(gh issue list --repo "$GITHUB_REPOSITORY" --label broken-link --state all \
+                  --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh issue edit "$num" --repo "$GITHUB_REPOSITORY" --body-file ./lychee/out.md
+            gh issue reopen "$num" --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
+            echo "Refreshed standing link-check issue #$num"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "Weekly link check found broken links" \
+              --label broken-link --body-file ./lychee/out.md
+            echo "Created standing link-check issue"
+          fi
       - name: Fail the run on broken links (pull requests)
         if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'pull_request'
         run: |
