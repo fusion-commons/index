@@ -5,7 +5,7 @@
  },
  "bitbucket.org/gyrokinetics/gs2": {
   "stars": null,
-  "updated": "2026-11-25"
+  "updated": "2026-11-28"
  },
  "github.com/BLAST-WarpX/warpx": {
   "stars": 508,
@@ -37,15 +37,15 @@
  },
  "github.com/KronosFE/kronos-ml": {
   "stars": 2,
-  "updated": "2026-10-20"
+  "updated": "2026-11-27"
  },
  "github.com/KronosFE/kronos-quantum": {
   "stars": 0,
-  "updated": "2026-10-19"
+  "updated": "2026-11-27"
  },
  "github.com/KronosFE/kronos-toolkit": {
   "stars": 0,
-  "updated": "2026-10-19"
+  "updated": "2026-11-27"
  },
  "github.com/LLNL/UEDGE": {
   "stars": 55,
@@ -97,7 +97,7 @@
  },
  "github.com/ProjectTorreyPines/FUSE.jl": {
   "stars": 96,
-  "updated": "2026-11-27"
+  "updated": "2026-11-28"
  },
  "github.com/SmileiPIC/Smilei": {
   "stars": 462,
@@ -106,6 +106,10 @@
  "github.com/Thea-Energy/stellarvista": {
   "stars": 18,
   "updated": "2026-05-27"
+ },
+ "github.com/TheodoreWolf/plasmax": {
+  "stars": 1,
+  "updated": "2026-11-25"
  },
  "github.com/ToFuProject/tofu": {
   "stars": 90,
@@ -117,7 +121,7 @@
  },
  "github.com/ammarhakim/gkylzero": {
   "stars": 121,
-  "updated": "2026-11-27"
+  "updated": "2026-11-28"
  },
  "github.com/ascot4fusion/ascot5": {
   "stars": 61,
@@ -137,7 +141,7 @@
  },
  "github.com/boutproject/hermes-3": {
   "stars": 70,
-  "updated": "2026-11-27"
+  "updated": "2026-11-28"
  },
  "github.com/cfs-energy/SPARCPublic": {
   "stars": 64,
@@ -172,7 +176,7 @@
   "updated": "2021-08-18"
  },
  "github.com/festim-dev/FESTIM": {
-  "stars": 138,
+  "stars": 139,
   "updated": "2026-11-15"
  },
  "github.com/firstlightfusion/mycela": {
@@ -193,7 +197,7 @@
  },
  "github.com/fusion-energy/paramak": {
   "stars": 113,
-  "updated": "2026-11-24"
+  "updated": "2026-11-28"
  },
  "github.com/gafusion/gacode": {
   "stars": 46,
@@ -204,7 +208,7 @@
   "updated": "2026-11-23"
  },
  "github.com/google-deepmind/deepmind-research": {
-  "stars": 15311,
+  "stars": 15313,
   "updated": "2026-06-17"
  },
  "github.com/google-deepmind/fusion_surrogates": {
@@ -212,8 +216,8 @@
   "updated": "2026-11-27"
  },
  "github.com/google-deepmind/torax": {
-  "stars": 757,
-  "updated": "2026-11-27"
+  "stars": 756,
+  "updated": "2026-11-28"
  },
  "github.com/gyselax/gyselalibxx": {
   "stars": 57,
@@ -241,18 +245,18 @@
  },
  "github.com/idaholab/TMAP8": {
   "stars": 39,
-  "updated": "2026-11-27"
+  "updated": "2026-11-28"
  },
  "github.com/idaholab/moose": {
-  "stars": 2417,
-  "updated": "2026-11-27"
+  "stars": 2420,
+  "updated": "2026-11-28"
  },
  "github.com/iterorganization/IMAS-Data-Dictionary": {
-  "stars": 71,
+  "stars": 72,
   "updated": "2026-11-18"
  },
  "github.com/iterorganization/IMAS-Python": {
-  "stars": 76,
+  "stars": 77,
   "updated": "2026-11-17"
  },
  "github.com/lammps/lammps": {
@@ -273,15 +277,15 @@
  },
  "github.com/mfem/mfem": {
   "stars": 2303,
-  "updated": "2026-11-27"
+  "updated": "2026-11-28"
  },
  "github.com/openfusiontoolkit/OpenFUSIONToolkit": {
   "stars": 96,
-  "updated": "2026-11-27"
+  "updated": "2026-11-28"
  },
  "github.com/openmc-dev/openmc": {
   "stars": 1153,
-  "updated": "2026-11-26"
+  "updated": "2026-11-27"
  },
  "github.com/osiris-code/osiris": {
   "stars": 87,
@@ -321,7 +325,7 @@
  },
  "github.com/stellaGK/stella": {
   "stars": 34,
-  "updated": "2026-11-26"
+  "updated": "2026-11-27"
  },
  "github.com/stellarmesh/stellarmesh": {
   "stars": 85,
